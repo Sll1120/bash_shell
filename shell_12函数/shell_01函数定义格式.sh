@@ -13,11 +13,19 @@ function_name () {
     list of commands
     [ return value ]
 }
+
 如果你愿意，也可以在函数名前加上关键字 function：
-function function_name () {
-    list of commands
-    [ return value ]
+#函数定义
+[ function ] function_name [()]
+{
+    #函数体
+    command
+    [return int]
 }
+
+#函数调用
+function_name arg1 arg2 ....
+注：[]是可选部分
 #函数返回值，可以显式增加 return 语句；如果不加，会将最后一条命令运行结果作为返回值。
 '
 #Shell 函数返回值只能是整数，一般用来表示函数执行成功与否，0表示成功，其他值表示失败。如果 return 其他数据，比如一个字符串，往往会得到错误提示：“numeric argument required”。
@@ -76,3 +84,42 @@ number_two
 #$unset .f function_name
 #如果你希望直接从终端调用函数，可以将函数定义在主目录下的 .profile 文件，这样每次登录后，在命令提示符
 #后面输入函数名字就可以立即调用。
+
+echo '---------------------------------------------------'
+#函数定义
+#10[ function ] function_name [()]
+#{
+#    #函数体
+#    command
+#    [return int]
+#}
+#
+##函数调用
+#function_name arg1 arg2 ....
+#!/bin/bash
+#定义函数
+function show_name()
+{
+    echo $USER
+}
+
+#调用函数
+show_name
+#通过$n获取参数值
+#$0获取脚本名称
+#$1第一个参数
+#$2第二个参数
+#$3第三个参数
+#以此类推
+#超过十个参数使用${10}、${11}
+
+#!/bin/bash
+function show_args()
+{
+    echo "脚本名称:$0"
+    echo "第一个参数:$1"
+    echo "第二个参数:$2"
+    echo "第三个参数:$3"
+}
+show_args arg1 arg2 arg3
+
