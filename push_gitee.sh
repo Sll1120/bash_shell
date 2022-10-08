@@ -8,3 +8,5 @@
 git add .
 git commit -m "change v1.$1"
 git push gitee master
+#git push -u gitee +master
+
