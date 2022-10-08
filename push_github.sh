@@ -7,4 +7,4 @@
 # **********************************************************
 git add .
 git commit -m "change v1.$1"
-git push github master
+git push gitee master
