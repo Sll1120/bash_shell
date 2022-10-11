@@ -1,6 +1,6 @@
 #!/bin/bash
 #======================================
-# File name:shell_01函数.sh
+# File name:shell_01函数定义格式.sh*
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 01:05
