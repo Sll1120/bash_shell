@@ -92,9 +92,9 @@ awk -F: '$3%2==1{print $0}' /etc/passwd
 #24、显示系统普通用户，并打印系统用户名和id
 echo '(27)-----------------------完美分割线--------------------------------'
 awk -F: '$3>=1000{print $1, $3}' /etc/passwd
-#25、统计nginx日志中独立用户数(ip维度计算)
+#25、统计apache2日志中独立用户数(ip维度计算)
 echo '(28)-----------------------完美分割线--------------------------------'
-awk '/([0-9]{1,3}\.){3}[0-9]{1,3}/{arr[$1]++}END{for(i in arr){print i}}' access.log 
+awk '/([0-9]{1,3}\.){3}[0-9]{1,3}/{arr[$1]++}END{for(i in arr){print i}}' /var/log/apache2/access.log
 #26、统计~/.bashrc 中每个词的个数
 echo '(29)-----------------------完美分割线--------------------------------'
-grep -oE '[0-9a-zA-Z]+' ~/.bashrc | awk '{arr[$1]++}END{for(i in arr){printf "%-15s | %-5d\n", i, arr[i]}}' | sort -n
+grep -oE '[0-9a-zA-Z]+' ~/.bashrc | awk '{arr[$1]++}END{for(i in arr){printf "%-15s | %-5d\n", i, arr[i]}}' | head -20
