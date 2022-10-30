@@ -1,0 +1,150 @@
+" 所有系统范围的默认值都在 $VIMRUNTIME/debian.vim 中设置，并由
+" 调用 :runtime 你可以在下面找到。如果你想改变其中的任何一个
+" 设置，你应该在这个文件 (/etc/vim/vimrc) 中进行设置，因为 debian.vim
+" 将在每次执行 vim 包的升级时被覆盖。
+" 建议在采购 debian.vim 后进行更改，因为它会改变'compatible' 选项的值。
+runtime! debian.vim
+
+" 如果用户没有 vimrc,Vim 将加载 $VIMRUNTIME/defaults.vim。
+" 这发生在 /etc/vim/vimrc(.local) 加载之后，所以它会覆盖这些文件中的任何设置。
+" 如果您不希望这种情况发生，请取消注释以下行以防止
+" let g:skip_defaults_vim = 1
+
+" 取消注释下一行以使 Vim 更兼容 Vi
+" 注意:debian.vim 设置了 'nocompatible'。设置 'compatible' 
+" 改变了很多选项，因此任何其他选项都应在设置“兼容”之后设置。
+set compatible
+
+" Vim5 及以后的版本支持语法高亮。取消注释下一个
+" 行默认启用语法高亮。
+if has("syntax")
+ syntax on
+endif
+
+" 如果在编辑区域内使用深色背景并突出显示语法
+" 也开启这个选项
+set background=dark
+
+" 取消注释以下内容，让 Vim 跳转到最后一个位置
+" 重新打开一个文件
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" 获取全局配置文件（如果可用）
+if filereadable("/etc/vim/vimrc.local")
+  source /etc/vim/vimrc.local
+endif
+
+" 以下内容被注释掉，因为它们会导致 vim 行为很多
+" 与普通的 Vi 不同。但强烈推荐它们。
+filetype plugin indent on "Vim 加载缩进规则和插件
+set showcmd               " 在状态行中显示（部分）命令.
+set showmatch             " 显示匹配的括号.
+set ignorecase            " 做不区分大小写的匹配
+set smartcase             " 做智能大小写匹配
+set incsearch             " 增量搜索
+set autowrite             " 在 :next 和 :make 等命令之前自动保存
+set hidden                " 缓冲区被废弃时隐藏
+set mouse=a               " 启用鼠标使用（所有模式）
+set cursorline            "高亮显示当前行
+filetype on               "开启文件类型侦测
+filetype indent on        "适应不同语言的智能缩进
+syntax enable             "开启语法高亮功能
+set laststatus=2          "总是显示状态栏
+set number                "显示行号
+set cursorline            "高亮显示当前行
+set autoindent            "打开自动缩进
+set wildmenu              "vim命令自动补全
+set ai!                   "设置自动缩进
+set autoindent            "自动对齐，就是把当前行的对齐格式应用到下一行
+set cindent               "cindent是特别针对 C语言语法自动缩进
+set smartindent           "依据上面的对齐格式，智能的选择对齐方式
+set nocompatible          "去掉有关vi一致性模式，避免以前版本的bug和局限
+set backspace=2           
+
+autocmd BufNewFile *.sh exec ":call AddTitleForShell()"
+function AddTitleForShell()
+	call append(0,"#!/bin/bash")
+	call append(1,"# **********************************************************")
+	call append(2,"# * Author : liangliangSu")
+	call append(3,"# * Email : sll917@hotmail.com")
+	call append(4,"# * Create time : ".strftime("%Y-%m-%d %H:%M"))
+	call append(5,"# * Filename : ".expand("%:t"))
+	call append(6,"# **********************************************************")
+	call append(7,"echo '(1)-----------------------完美分割线--------------------------------'")
+	normal G
+    	normal O
+endfunction
+
+autocmd bufnewfile *.py exec ":call HeaderPython()"
+function HeaderPython()
+	call append(0,"#!/usr/bin/python3")
+	call append(1,"# **********************************************************")
+	call append(2,"# * Author : liangliangSu")
+	call append(3,"# * Email : sll917@hotmail.com")
+	call append(4,"# * Create time : ".strftime("%Y-%m-%d %H:%M"))
+	call append(5,"# * Filename : ".expand("%:t"))
+	call append(6,"# **********************************************************")
+	call append(7,"echo '(1)-----------------------完美分割线--------------------------------'")
+	normal G
+    	normal O
+endfunction
+
+"" vim plug start===================================
+"call plug#begin('~/.vim/plugged')
+"Plug 'mhinz/vim-startify'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'yggdroot/indentline'
+"Plug 'easymotion/vim-easymotion'
+"Plug 'preservim/nerdtree'
+"Plug 'majutsushi/tagbar'
+"Plug 'sbdchd/neoformat'
+"Plug 'w0rp/ale'
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"endif
+"Plug 'mvdan/sh'
+"Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
+"Plug 'hhatto/autopep8'
+"Plug 'tpope/vim-commentary'
+"Plug 'tpope/vim-fugitive'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'junegunn/gv.vim'
+"
+"call plug#end()
+"" vim plug end=====================================
+"let mapleader = ','
+"
+"" easymotion set
+"nmap ss <Plug>(easymotion-s2)
+"
+"" NERDtree set
+""autocmd VimEnter * NERDTree
+"nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
+""autocmd VimEnter * NERDTree | wincmd p
+"
+"" Tagbar set
+""autocmd VimEnter * Tagbar
+"nmap <C-m> :TagbarToggle<CR>
+"
+"" deoplete
+"let g:deoplete#enable_at_startup = 1
+"set completeopt-=preview
+"set pyxversion=3
+"
+"" shfmt set
+"" let g:shfmt_extra_args = '-i 2'
+"" let g:shfmt_fmt_on_save = 0
+"
+"" Switch windows
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-l> <C-w>l
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
