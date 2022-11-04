@@ -5,5 +5,6 @@
 # * Create time : 2022-10-30 22:27
 # * Filename : pull_gitee.sh
 # **********************************************************
-git pull gitee master --rebase
-
+git fetch --all
+git reset --hard gitee/master
+git pull
