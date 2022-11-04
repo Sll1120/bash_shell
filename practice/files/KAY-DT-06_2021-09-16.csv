@@ -1,0 +1,2 @@
+operator,deviceSN,deviceSKU,deviceHWD,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check,backupState,PMDsnCostTime,PmMusicTime,PmMcuBootCostTime
+noInfo,U16Q303TZ0K8,UR2500S0US,10B011100XX1000A1XX0100PP70XXXXX,Lidar360P3.3326.18.0_rc2_EB7_RemoveWallFollowAndIR.zip,AC000W021960806,20579ED3480D,8c:ec:4b:87:e0:d8,KAY-DT-06,2021-09-16 19:51:07.413995,47.098,22.905,8.099,success,noInfo,2,4.885,3.524,0.81

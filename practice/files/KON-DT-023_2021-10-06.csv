@@ -1,0 +1,2 @@
+operator,deviceSN,deviceSKU,deviceHWD,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check,backupState,PMDsnCostTime,PmMusicTime,PmMcuBootCostTime
+noInfo,Z06Q3222Z0Z2,RV9124SXUS,15B011000XX200122XX1000PP60XXXXX,MesaValleyHarmonizedP5.1126.13.0_sprint13_rc2_FV0.0.12_SU2.2.030_M0.0.41EB_ST_GM1.0.41EB_GD_10.18_Sep302021.zip,AC000W019317303,20579ED02CFF,8c:ec:4b:73:19:ae,KON-DT-023,2021-10-06 11:56:29.738194,62.91,15.772,3.885,success,noInfo,2,3.797,6.251,1.081
