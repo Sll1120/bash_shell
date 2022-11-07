@@ -1,0 +1,2 @@
+operator,deviceSN,deviceSKU,deviceHWD,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check,backupState,PMDsnCostTime,PmMusicTime,PmMcuBootCostTime
+noInfo,Z14Q3081Z2A6,RV1301A3CA,11D011000XX200122XX1001PP60XXXXX,MesaValleyHarmonizedP4.1126.12.8_sprint12.8_FV0.0.13_SU2.2.017_M0.0.40_GM1.0.40_22.43_Sep162021.zip,AC000W021979726,20579ED0AA41,a4:bb:6d:cf:1a:2b,KAY-DT-44,2021-11-08 11:04:55.803793,38.375,15.157,13.873,success,noInfo,2,4.617,4.496,0.813

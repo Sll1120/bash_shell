@@ -1,0 +1,2 @@
+operator,deviceSN,packageName,dsn,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
+noInfo,F01Q3081A0A2,Mesa2.0P4.8.0_sprint8_VAVE_rc1_FV1.3.8_ST1.1.72_M0.0.11_GM1.0.11_RP4.8.0_sprint8_VAVE_rc1_11.14_Mar102021.zip,None_F01Q3081A0A2,a4:bb:6d:cf:1a:2b,KAY-DT-44,2021-03-12 17:40:55.819550,35.224,11.308,11.85,failed,noInfo,0.001,0.88

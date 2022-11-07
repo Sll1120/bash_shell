@@ -1,0 +1,3 @@
+operator,deviceSN,deviceSKU,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
+noInfo,J16Q3081Z4V8,RV2520AOUS,Lidar360P3.12.0_sprint12_rc3_scfOn_FV0.0.8_M1.0.60_RP3.12.0_sprint12_rc3_scfOn_multi_ayla_plat_14.59_Apr152021.zip,AC000W018144731,3095871B7B1E,a4:bb:6d:ce:ca:1c,KAY-DT-43,2021-04-25 18:49:20.584911,40.964,22.341,3.741,success,noInfo,1.246,2.645,0.796
+noInfo,J16Q3081Z4V8,RV2520AOUS,Lidar360P3.12.0_sprint12_rc3_scfOn_FV0.0.8_M1.0.60_RP3.12.0_sprint12_rc3_scfOn_multi_ayla_plat_14.59_Apr152021.zip,AC000W018144732,3095871B7B1E,a4:bb:6d:ce:ca:1c,KAY-DT-43,2021-04-25 19:00:33.801555,41.302,21.663,3.727,success,noInfo,1.294,2.587,0.8
