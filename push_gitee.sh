@@ -1,12 +1,11 @@
 #!/bin/bash
 # **********************************************************
-# * Author : liangliangsu
+# * Author : liangliangSu
 # * Email : sll917@hotmail.com
-# * Create time : 2022-09-20 16:46
-# * Filename : push_github.sh
+# * Create time : 2022-11-09 19:14
+# * Filename : push_gitee.sh
 # **********************************************************
 git add .
 git commit -m "change V`date "+%Y-%m-%d %H:%M"`"
 #git push gitee master
 git push -u gitee +master
-
