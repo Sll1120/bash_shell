@@ -1,2 +1,0 @@
-operator,deviceSN,deviceSKU,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
-noInfo,K06Q3081Z6N0,RV25SBA0WD,Lidar360EB2_WetDry_FV0.0.8_MLidar2021WDM1.0.1EB_WD_first_version_GD.bin_REB2_WetDry_multi_ayla_plat_15.03_Apr202021.zip,AC000W018144348,2CD26B5DD98B,a4:bb:6d:ce:ca:1c,KAY-DT-43,2021-05-07 16:01:15.086906,41.354,21.592,3.647,success,noInfo,1.445,2.526,0.793
