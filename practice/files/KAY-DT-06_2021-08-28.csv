@@ -1,2 +1,0 @@
-operator,deviceSN,deviceSKU,deviceHWD,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check,backupState,PMDsnCostTime,PmMusicTime,PmMcuBootCostTime
-noInfo,S23Q3081Z6H1,RV2520A0US,10B011100XX1000A1XX0100PP60XXXXX,Lidar360P3.3326.15.8_sprint15.8_FV1.4.3_ST2.2.017_M0.0.95_GM1.0.95_04.13_Aug062021.zip,AC000W021520950,20579ED36114,8c:ec:4b:87:e0:d8,KAY-DT-06,2021-08-28 08:01:40.488698,52.084,32.753,10.696,success,noInfo,0,2.663,3.05,0.826

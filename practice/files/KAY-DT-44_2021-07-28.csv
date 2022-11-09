@@ -1,2 +1,0 @@
-operator,deviceSN,deviceSKU,deviceHWD,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
-noInfo,Q15Q3081Z1J1,UR1305A1US,11D01X000XX200XXXXXX00XXXX0XXXXX,MesaValleyHarmonizedP4.1126.11.6_sprint11.6_rc2_FV0.0.6_SU2.2.007_M0.0.30_GM1.0.30_14.35_Jul012021.zip,AC000W021480686,309587AB6492,a4:bb:6d:cf:1a:2b,KAY-DT-44,2021-07-28 11:25:51.190731,44.128,14.524,3.486,success,noInfo,2.348,4.813,0.779
