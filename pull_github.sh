@@ -6,5 +6,5 @@
 # * Filename : pull_gitee.sh
 # **********************************************************
 git fetch --all
-git reset --hard gitee/master
+git reset --hard github/master
 git pull
