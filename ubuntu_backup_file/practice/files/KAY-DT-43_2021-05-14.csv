@@ -1,3 +1,0 @@
-operator,deviceSN,deviceSKU,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
-noInfo,K13Q3081Z6F7,RV9113AXUS,Mesa2.0P4.10.0_sprint10_rc1_pro_FV1.3.8_ST2.1.108_M0.0.14_GM1.0.14_RP4.10.0_sprint10_rc1_pro_20.52_May122021.zip,AC000W018144491,48D890855B23,00:1e:10:1f:00:00,KAY-DT-43,2021-05-14 07:42:29.685017,34.154,13.495,3.605,success,noInfo,1.481,2.955,0.98
-noInfo,K13Q3081Z6S2,RV9903VXUS,Mesa2.0P4.10.0_sprint10_rc1_pro_FV1.3.8_ST2.1.108_M0.0.14_GM1.0.14_RP4.10.0_sprint10_rc1_pro_20.52_May122021.zip,AC000W018144492,48D890D6A844,a4:bb:6d:ce:ca:1c,KAY-DT-43,2021-05-14 10:28:04.337467,37.469,13.569,13.921,success,noInfo,1.488,3.082,0.935
