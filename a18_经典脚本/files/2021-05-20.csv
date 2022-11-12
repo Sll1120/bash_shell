@@ -1,2 +1,0 @@
-operator,deviceSN,deviceSKU,packageName,dsn,deviceMacAddress,stationMacAddress,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
-noInfo,J28Q3081Z0R9,RV2520SEUS,Lidar360P3.12.0_sprint12_rc3_scfOn_FV0.0.8_M1.0.60_RP3.12.0_sprint12_rc3_scfOn_multi_ayla_plat_14.59_Apr152021.zip,AC000W019362803,3095871B7E61,a4:bb:6d:ce:ca:1c,KAY-DT-43,2021-05-20 08:21:37.849535,38.217,22.613,3.697,success,noInfo,1.118,2.699,0.791

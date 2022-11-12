@@ -38,7 +38,7 @@ echo "It is a test"
 #输出：
 #OK!It si a test
 #5)显示结果重定向至文件
-echo "It is a test" > myfile
+echo "It is a test" > myfile.txt
 #6)若需要原样输出字符串（不进行转义），请使用单引号。
 #例如：
 echo '$name\"'

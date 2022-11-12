@@ -1,3 +1,0 @@
-operator,robotSN,packageName,dsn,stationMac,stationName,PMStartTime,PMFWCostTime,PMNavCostTime,PMMCUCostTime,PMStatus,md5Check
-noInfo,F01Q3081A2J0,Mesa2.0P3.7.0_sprint7_VAVE_FV1.3.8_ST1.1.72_M0.0.7EB_RC3_spi_init_ST_GM1.0.7EB_RC3_spi_init_GD_RP3.7.0_sprint7_VAVE_16.28_Feb052021.zip,AC000W016589054,a4:bb:6d:cf:1a:2b,KAY-DT-44,2021-03-02 08:41:30,35.022,11.256,11.146,success,noInfo,1.657,0.41
-noInfo,X12K3081H2H8,Mesa2.0P3.5.0_sprint5_FV1.3.8_ST1.1.72_M0.0.5_GM1.0.5_RP3.5.0_sprint5_14.49_Jan222021.zip,None_X12K3081H2H8,a4:bb:6d:cf:1a:2b,KAY-DT-44,2021-03-02 10:51:51,36.355,11.514,11.95,success,noInfo,0.547
