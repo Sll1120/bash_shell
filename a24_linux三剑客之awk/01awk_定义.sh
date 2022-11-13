@@ -13,6 +13,7 @@ AWK 工作流程可分为三个部分：
 3, 读输入文件之后的代码段（由END关键字标识）。
 命令结构:
 awk 'BEGIN{ commands } pattern{ commands } END{ commands }'
+awk '条件类型1{动作1} 条件类型2{动作2} ...' filename
 
 1、通过关键字 BEGIN 执行 BEGIN 块的内容，即 BEGIN 后花括号 {} 的内容。
 2、完成 BEGIN 块的执行，开始执行body块。
