@@ -6,6 +6,6 @@
 # * Filename : push_gitee.sh
 # **********************************************************
 git add .
-git commit -m "changed V_`date "+%Y-%m-%d %H:%M"`"
+git commit -m "Released in `date "+%Y-%m-%d %H:%M"`"
 #git push github master
 git push -u github +master
