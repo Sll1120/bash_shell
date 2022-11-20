@@ -1,0 +1,67 @@
+#!/bin/bash
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-11-20 17:24
+# * Filename : 05check_ip.sh
+# **********************************************************
+echo '(1)-----------------------完美分割线--------------------------------'
+function check_ip() {
+	IP=$1
+	VALID_CHECK=$(echo $IP | awk -F. '$1<=255&&$2<=255&&$3<=255&&$4<=255{print "yes"}')
+	if echo $IP | grep -E "^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$" >/dev/null; then
+		if [[ ${VALID_CHECK} == "yes" ]]; then
+			echo "$IP available."
+		else
+			echo "$IP unavailable!"
+		fi
+	else
+		echo "Format error!"
+	fi
+}
+check_ip 10.0.2.15 
+check_ip 256.1.1.1
+
+echo '(2)-----------------------完美分割线--------------------------------'
+function check_ip() {
+	IP=$1
+	if [[ $IP =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
+		FIELD1=$(echo $IP | cut -d. -f1)
+		FIELD2=$(echo $IP | cut -d. -f2)
+		FIELD3=$(echo $IP | cut -d. -f3)
+		FIELD4=$(echo $IP | cut -d. -f4)
+		if [ $FIELD1 -le 255 -a $FIELD2 -le 255 -a $FIELD3 -le 255 -a $FIELD4 -le 255 ]; then
+			echo "$IP available."
+		else
+			echo "$IP unavailable!"
+		fi
+	else
+		echo "Format error!"
+	fi
+}
+check_ip 10.0.2.15
+check_ip 256.1.1.1
+
+echo '(3)-----------------------完美分割线--------------------------------'
+function check_ip(){
+    local IP=$1
+    VALID_CHECK=$(echo $IP|awk -F. '$1<=255&&$2<=255&&$3<=255&&$4<=255{print "yes"}')
+    if echo $IP|grep -E "^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$" >/dev/null; then
+        if [[ ${VALID_CHECK} == "yes" ]]; then
+            echo -e "\e[32m $IP available! \e[0m"
+            return 0
+        else
+            echo -e "\e[31m $IP unavailable! \e[0m"
+            return 1
+        fi
+    else
+        echo "Format error! Please input again."
+        return 1
+    fi
+}
+while true; do
+    read -p "Please enter IP: " IP
+    check_ip $IP
+    [ $? -eq 0 ] && break || continue
+done 
+

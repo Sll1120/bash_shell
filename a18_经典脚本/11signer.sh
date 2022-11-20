@@ -1,5 +1,10 @@
 #!/bin/bash
-
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-11-20 22:52
+# * Filename : 11sign.sh
+# **********************************************************
 # 生成签名私钥和证书
 read -p "请输入存放证书的目录:" dir
 if [ ! -d $dir ]; then
@@ -11,3 +16,5 @@ read -p "请输入密钥名称:" name
 openssl genrsa -out ${dir}/${name}.key
 # 使用 openssl 生成证书 #subj 选项可以在生成证书时,非交互自动填写 Common Name 信息
 openssl req -new -x509 -key ${dir}/${name}.key -subj "/CN=common" -out ${dir}/${name}.crt
+
+

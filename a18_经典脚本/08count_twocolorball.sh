@@ -9,6 +9,6 @@
 # 02 06 11 12 19 29  06
 # 统计篮球和红球数据出现的概率次数(篮球不分顺序,统计所有篮球混合在一起的概率)
 echo "篮球数据出现的概率次数"
-awk '{print $1"\n"$2"\n"$3"\n"$4"\n"$5"\n"$6}' two_colorball.txt | sort | uniq -c | sort -g
+awk '{print $1"\n"$2"\n"$3"\n"$4"\n"$5"\n"$6}' z2_example.txt | sort | uniq -c | sort -g
 echo "红球数据出现的概率次数"
-awk '{print $7}' two_colorball.txt | sort | uniq -c | sort -g
+awk '{print $7}' z2_example.txt | sort | uniq -c | sort -g
