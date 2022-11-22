@@ -15,3 +15,4 @@ chmod -R o-wx */*.sh && chmod o+r */*.sh
 chmod o-wx */ 
 chown -R sll:sll *.sh */*.sh
 chown sll:sll */  
+

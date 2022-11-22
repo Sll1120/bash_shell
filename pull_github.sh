@@ -8,3 +8,4 @@
 git fetch --all
 git reset --hard github/master
 git pull
+
