@@ -6,7 +6,6 @@
 # * Filename : pull_code.sh
 # **********************************************************
 git fetch --all
-git reset --hard github/master
 git reset --hard gitee/master
 git pull
 
