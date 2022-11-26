@@ -1,6 +1,6 @@
 #!/bin/bash
 #======================================
-# File name:shell_18开机问候语.sh
+# File name:12开机问候语.sh
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 18:23
@@ -19,4 +19,3 @@ else
 fi
 echo "当前时间是:$(date +"%Y‐%m‐%d %H:%M:%S")"
 echo -e "\033[34m$msg\033[0m"
-

@@ -1,16 +1,14 @@
 #!/bin/bash
 #======================================
-# File name:shell_17numberSort.sh
+# File name:shell_11numberSort.sh
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 18:16
 #======================================
-#!/bin/bash
-
 # 依次提示用户输入 3 个整数,脚本根据数字大小依次排序输出 3 个数字
 read -p " 请输入一个整数：" num1
 read -p " 请输入一个整数：" num2
-read -p " 请输入一个整数:  " num3
+read -p " 请输入一个整数: " num3
 
 # 不管谁大谁小,最后都打印 echo "$num1,$num2,$num3"
 # num1 中永远存最小的值,num2 中永远存中间值,num3 永远存最大值
