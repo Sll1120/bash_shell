@@ -1,0 +1,12 @@
+file /mnt/res/app/Roboeye_server
+set pagination off
+b __cxa_throw
+b exit
+b __assert_fail
+run
+echo "(gdb) bt\n"
+bt
+echo "(gdb) frame\n"
+frame
+echo "(gdb) info r\n"
+info r
