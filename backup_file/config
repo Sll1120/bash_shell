@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "github"]
+	url = git@github.com:Sll1120/shell.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+[remote "gitee"]
+	url = git@gitee.com:sll1120/shell.git
+	fetch = +refs/heads/*:refs/remotes/gitee/*
+[branch "master"]
+	remote = gitee
+	merge = refs/heads/master
