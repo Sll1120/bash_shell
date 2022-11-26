@@ -1,12 +1,12 @@
 #!/bin/bash
 #======================================
-# File name:shell_23case语句.sh
+# File name:case语句.sh
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 18:54
 #======================================
-#!/bin/bash
-case $1 in
+read -p "请输入你要查询的城市房价排名名次:" number
+case $number in
 1)
  echo "2021年全国城市房价排行第1是:深圳  "
 ;;

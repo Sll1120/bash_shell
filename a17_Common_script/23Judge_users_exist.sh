@@ -3,9 +3,8 @@
 # * Author : liangliangsu
 # * Email : sll917@hotmail.com
 # * Create time : 2022-10-09 15:57
-# * Filename : shell_30判断用户是否已存在.sh
+# * Filename : 23Judge_users_exist.sh
 # **********************************************************
-#!/bin/bash
 function failure() {
     echo -e "\033[31m $1 \033[0m"       # red, failure
 }
@@ -20,7 +19,8 @@ function warning() {
 
 function check_username() {
   if [[ $(id -u "${USER_NAME}" 2> /dev/null) != "" ]]; then
-    failure "您输入的用户已存在，该用户名不可用，请核对后重新输入！"   return 1
+    failure "您输入的用户已存在，该用户名不可用，请核对后重新输入！"   
+    return 1
   else
     success "您输入需要创建的用户名为：${USER_NAME}"
     return 0

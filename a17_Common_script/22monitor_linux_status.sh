@@ -1,6 +1,6 @@
 #!/bin/bash
 #======================================
-# File name:shell_29监控Linux.sh
+# File name:监控Linux.sh
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 20:32
@@ -65,43 +65,5 @@ MEMORY=$(free -m | awk 'NR==2{printf "%.2f%%\t\t", $3*100/$2 }')
 DISK=$(df -h | awk '$NF=="/"{printf "%s\t\t", $5}')
 CPU=$(top -bn1 | grep load | awk '{printf "%.2f%%\t\t\n", $(NF-2)}')
 echo "$MEMORY$DISK$CPU"
-sleep 5
+sleep 3
 done
-#上面的代码将输出以下内容：
-#[root@localhost tmp]# ./stats.sh
-#Memory Disk CPU
-#9.34% 7% 0.00%
-#9.34% 7% 0.00%
-#9.34% 7% 0.00%
-#9.34% 7% 0.00%
-#将数据输出到日志文件：
-#[root@localhost tmp]# ./stats.sh >> log.txt
-#压力测试
-#由于我们的机器上没有任何负载，我们可以使用压力测试器stress命令，
-#使 CPU 和内存负载运行一段时间。
-#stress命令的用法：https://linux.die.net/man/1/stress
-#现在我们可以使用命令“stress”来给我们的服务器添加负载。
-#例如，通过指定 2 个 CPU-bound 进程、1 个 I/O-bound 进程和 1 个内存分配器进程，
-#对系统施加平均负载 4，如下所示。以下压力测试将运行 1 小时。
-#[sll@1120:~/github/shell/shell_17实用的脚本]$ stress -c 2 -i 1 -m 1 --vm-bytes 128M -t 3600s
-#stress: info: [13037] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
-#stress: info: [1574] successful run completed in 3600s
-#[root@localhost tmp]# ./stats.sh 
-#Memory Disk CPU
-#20.48% 7% 1.21%
-#20.48% 7% 1.02%
-#20.48% 7% 0.94%
-#21.89% 7% 1.18%
-#20.68% 7% 1.41%
-#22.09% 7% 1.62%
-#24.10% 7% 1.81%
-#24.90% 7% 1.98%
-#32.93% 7% 2.14%
-#30.32% 7% 2.29%
-#20.58% 7% 2.63%
-#27.91% 7% 2.82%
-#20.48% 7% 2.59%
-#20.48% 7% 2.38%
-#20.48% 7% 2.19%
-#20.48% 7% 2.02%
-#20.48% 7% 1.86%
