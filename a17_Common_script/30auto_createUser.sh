@@ -1,12 +1,11 @@
 #!/bin/bash
-#======================================
-# File name:shell_16autoCreateUser.sh
-# Author:liangliangSu
-# Email:sll917@hotmail.com
-# Date of writing:2022-10-07 18:10
-#======================================
-#!/bin/bash
-# 编写脚本:提示用户输入用户名和密码,脚本自动创建相应的账户及配置密码。如果用户
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-11-27 16:53
+# * Filename : 30autoCreateUser.sh
+# **********************************************************
+#编写脚本:提示用户输入用户名和密码,脚本自动创建相应的账户及配置密码。如果用户
 # 不输入账户名,则提示必须输入账户名并退出脚本;如果用户不输入密码,则统一使用默
 # 认的 123456 作为默认密码。
 
@@ -25,3 +24,5 @@ stty echo
 pass=${pass:-123456}
 useradd "$user"
 echo "$pass" | passwd --stdin "$user"
+
+

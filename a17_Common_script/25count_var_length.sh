@@ -3,7 +3,7 @@
 # * Author : liangliangSu
 # * Email : sll917@hotmail.com
 # * Create time : 2022-11-03 15:06
-# * Filename : 33计算变量长度.sh
+# * Filename : 计算变量长度.sh
 # **********************************************************
 echo '(1)-----------------------完美分割线--------------------------------'
 name=suliangliang
