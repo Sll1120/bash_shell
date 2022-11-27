@@ -1,10 +1,10 @@
 #!/bin/bash
-#======================================
-# File name:监控Linux.sh
-# Author:liangliangSu
-# Email:sll917@hotmail.com
-# Date of writing:2022-10-07 20:32
-#======================================
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-11-27 23:26
+# * Filename : 43display_linux_status.sh
+# **********************************************************
 #该脚本基本上由三个主要部分组成：
 : '
 #1.监控内存：
