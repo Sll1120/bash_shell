@@ -11,8 +11,7 @@ mem_size=$(free | awk '/Mem/{print $4}')
 while :
 do
 # 注意内存和磁盘提取的空间大小都是以 Kb 为单位
-#if  [  $disk_size -le 512000 ] && [ $mem_size -le 1024000  ]
-if  [  $disk_size -le 12000 ] || [ $mem_size -le 1024000  ]
+if  [ $disk_size -le 12000 ] && [ $mem_size -le 1024000 ]
 then
 #    mail  ‐s  "Warning"  root  <<EOF
 #  Insufficient resources,资源不足

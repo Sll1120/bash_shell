@@ -1,4 +1,10 @@
 #!/bin/bash
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-11-27 21:28
+# * Filename : 35count_twocolorball.sh
+# **********************************************************
 # 统计双色球各个数字的中奖概率
 # 往期双色球中奖号码如下:
 # 01 04 11 28 31 32  16
@@ -9,6 +15,6 @@
 # 02 06 11 12 19 29  06
 # 统计篮球和红球数据出现的概率次数(篮球不分顺序,统计所有篮球混合在一起的概率)
 echo "篮球数据出现的概率次数"
-awk '{print $1"\n"$2"\n"$3"\n"$4"\n"$5"\n"$6}' two_colorball.txt | sort | uniq -c | sort -g
+awk '{print $1"\n"$2"\n"$3"\n"$4"\n"$5"\n"$6}' z_two_colorball.txt | sort | uniq -c | sort -g
 echo "红球数据出现的概率次数"
-awk '{print $7}' two_colorball.txt | sort | uniq -c | sort -g
+awk '{print $7}' z_two_colorball.txt | sort | uniq -c | sort -g
