@@ -1,5 +1,10 @@
 #!/bin/bash
-
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2022-12-03 10:10
+# * Filename : z_generate_Sign.sh
+# **********************************************************
 # 生成签名私钥和证书
 read -p "请输入存放证书的目录:" dir
 if [ ! -d $dir ]; then
