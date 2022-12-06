@@ -5,7 +5,7 @@
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-07 19:35
 #======================================
-files=`find . -name "*.md"`         #寻找txt类型的文件
+files=`find . -name "*.txt"`         #寻找txt类型的文件
 for file in $files                   #遍历files
 do
 	read -p "请输入需要查找被替换的字符串:" str1
