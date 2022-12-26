@@ -1,0 +1,189 @@
+Aug  5 09:07:06 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:06 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:06 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:07 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:07 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:07 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:07 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:08 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:08 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:08 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:08 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:09 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:10 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:10 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:10 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:11 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:11 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:11 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:11 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:12 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:12 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:12 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:12 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:13 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:13 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:13 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:13 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:14 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:14 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:14 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:14 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:15 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:15 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:15 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:15 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:16 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:16 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:16 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:16 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:17 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:18 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:18 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:18 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:19 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:19 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:19 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:19 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:19 rk3326_robot64 local0.info logd: [info-conf] conf_read: read configuration from file: /mnt/res/vapp/AC.conf
+Aug  5 09:07:19 rk3326_robot64 local0.err logd: [error-logger] fs_monitor_add_watcher: failed to add watcher for /mnt/res/vapp/AC.conf.startup: No such file or directory
+Aug  5 09:07:20 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:20 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:20 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:20 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:21 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:21 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:21 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:21 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:22 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:22 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:22 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:22 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:23 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:23 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:23 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:23 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:24 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:24 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:25 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:25 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:26 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:26 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:26 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:26 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:27 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:27 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:27 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:27 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:28 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:28 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:28 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:28 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:29 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:29 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:29 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:29 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:30 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:30 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:30 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:30 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:31 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:31 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:31 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:31 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:32 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:32 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:32 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:32 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:33 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:34 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:34 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:34 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:35 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:35 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:35 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:35 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:36 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:36 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:36 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:36 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:37 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:37 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:37 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:37 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:38 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:38 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:38 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:38 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:39 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:39 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:39 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:39 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:40 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:40 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:40 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:40 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:41 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:42 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:42 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:42 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:43 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:43 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:43 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:43 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:44 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:44 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:44 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:44 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:44 rk3326_robot64 local0.warn devd: [warning-client] ds_client_send_done: GET failed, error Couldn't resolve host name, http://RV1100A-39a9391a-device.aylanetworks.com/ping
+Aug  5 09:07:44 rk3326_robot64 local0.warn devd: [warning-client] ds_ping_done: ADS ping failed
+Aug  5 09:07:45 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:45 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:45 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:45 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:46 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:46 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:46 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:46 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:47 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:47 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:47 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:47 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:48 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:48 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:48 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:48 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:49 rk3326_robot64 local0.info logd: [info-conf] conf_read: read configuration from file: /mnt/res/vapp/AC.conf
+Aug  5 09:07:49 rk3326_robot64 local0.err logd: [error-logger] fs_monitor_add_watcher: failed to add watcher for /mnt/res/vapp/AC.conf.startup: No such file or directory
+Aug  5 09:07:49 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:49 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:50 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:50 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:51 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:51 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:51 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:51 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:52 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:52 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:52 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:52 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:53 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:53 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:53 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:53 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:54 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:54 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:54 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:54 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:55 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:55 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:55 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:55 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:56 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:56 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:56 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:56 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start
+Aug  5 09:07:57 rk3326_robot64 local0.info cond: [info-wifi] wifi_step_handler: Wi-Fi starting
+Aug  5 09:07:57 rk3326_robot64 local0.info cond: [info-wifi] wifi_platform_daemon_start: starting WPA_SUPPLICANT
+Aug  5 09:07:58 rk3326_robot64 local0.err cond: [error-wifi] wifi_platform_daemon_start: cmd failed: wpa_supplicant -P/var/run/wpa_supplicant.pid -B -iwlan0 -Dnl80211 -C/var/run/wpa_supplicant >/dev/null 2>&1
+Aug  5 09:07:58 rk3326_robot64 local0.err cond: [error-wifi] wifi_module_err: error: wifi_platform_station_start

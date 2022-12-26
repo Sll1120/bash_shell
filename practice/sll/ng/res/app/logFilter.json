@@ -1,0 +1,19 @@
+{
+	"websocket_ip": "127.0.0.1",
+	"websocket_port": "9002",
+	"rotate_size": 2048,
+	"log_path_dir":"/tmp/",
+	"log_rotate_number":1,
+	"upload_us_enble" : 0,
+	"filter": [{
+			"regex": "(\\w+)MST::(\\w+)",
+			"pbinputBase64": "",
+			"enable": 0
+		},
+		{
+			"regex": "(\\w+)(\\w+)",
+			"pbinputBase64": "",
+			"enable": 0
+		}
+	]
+}

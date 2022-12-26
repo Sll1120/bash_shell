@@ -1,0 +1,3 @@
+##This patch should be the last to read
+##3326 Peripherals device configuration
+mcu_wakeup_gpio = 15

@@ -1,0 +1,355 @@
+Aug  5 09:00:12 rk3326_robot64 syslog.info syslogd started: BusyBox v1.27.2
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: klogd started: BusyBox v1.27.2 (2022-01-04 18:34:30 CST)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Initializing cgroup subsys cpuset
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Initializing cgroup subsys cpu
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Initializing cgroup subsys cpuacct
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000] Linux version 4.4.189 (zxg@bej-lt-pf28lkb1) (gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) ) #2 SMP PREEMPT Wed Jan 5 14:07:36 CST 2022
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Boot CPU: AArch64 Processor [410fd042]
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] On node 0 totalpages: 65024
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000]   DMA zone: 1016 pages used for memmap
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000]   DMA zone: 0 pages reserved
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000]   DMA zone: 65024 pages, LIFO batch:15
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] psci: probing for conduit method from DT.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] psci: PSCIv1.0 detected in firmware.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] PERCPU: Embedded 19 pages/cpu @ffffffc00ff40000 s37032 r8192 d32600 u77824
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] pcpu-alloc: s37032 r8192 d32600 u77824 alloc=19*4096
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Detected VIPT I-cache on CPU0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 64008
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000] Kernel command line: storagemedia=nand androidboot.storagemedia=nand androidboot.mode=normal  androidboot.slot_suffix= androidboot.serialno=L02M03VA10012A11T3M2221213H0440  rootwait swiotlb=1 console=ttyFIQ0 root
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] PID hash table entries: 1024 (order: 1, 8192 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Dentry cache hash table entries: 32768 (order: 6, 262144 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Inode-cache hash table entries: 16384 (order: 5, 131072 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] software IO TLB: mapped [mem 0x0fea0000-0x0fee0000] (0MB)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Memory: 244388K/260096K available (5054K kernel code, 412K rwdata, 1784K rodata, 384K init, 1700K bss, 15708K reserved, 0K cma-reserved)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000] Virtual kernel memory layout:
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbdbfff0000   (   246 GB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]       .init : 0xffffff8008740000 - 0xffffff80087a0000   (   384 KB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008570000   (  5056 KB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     .rodata : 0xffffff8008570000 - 0xffffff8008740000   (  1856 KB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]       .data : 0xffffff80087a0000 - 0xffffff8008807008   (   413 KB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     fixed   : 0xffffffbffe7fb000 - 0xffffffbffec00000   (  4116 KB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     PCI I/O : 0xffffffbffee00000 - 0xffffffbfffe00000   (    16 MB)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.000000]     memory  : 0xffffffc000200000 - 0xffffffc010000000   (   254 MB)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Preemptible hierarchical RCU implementation.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] NR_IRQS:64 nr_irqs:64 0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] GIC: Using split EOI/Deactivate mode
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.debug kernel: [    0.000000] rockchip_mmc_get_phase: invalid clk rate
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] Architected cp15 timer(s) running at 24.00MHz (phys).
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.000009] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.001693] Console: colour dummy device 80x25
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.001735] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.001760] pid_max: default: 32768 minimum: 301
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.001978] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.001999] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.003202] Initializing cgroup subsys devices
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.003246] Initializing cgroup subsys freezer
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.003828] sched-energy: CPU device node has no sched-energy-costs
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.003854] Invalid sched_group_energy for CPU0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.003872] CPU0: update cpu_capacity 1024
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.003946] ASID allocator initialised with 32768 entries
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.015146] Detected VIPT I-cache on CPU1
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.015227] Invalid sched_group_energy for CPU1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.015236] CPU1: update cpu_capacity 1024
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.015243] CPU1: Booted secondary processor [410fd042]
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.018202] Detected VIPT I-cache on CPU2
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.018263] Invalid sched_group_energy for CPU2
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.018271] CPU2: update cpu_capacity 1024
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.018278] CPU2: Booted secondary processor [410fd042]
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021285] Detected VIPT I-cache on CPU3
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.021341] Invalid sched_group_energy for CPU3
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021349] CPU3: update cpu_capacity 1024
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021355] CPU3: Booted secondary processor [410fd042]
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021496] Brought up 4 CPUs
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021586] SMP: Total of 4 processors activated.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021608] CPU features: detected feature: 32-bit EL0 Support
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.021631] CPU: All CPU(s) started at EL2
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.021997] Invalid sched_group_energy for CPU3
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022021] Invalid sched_group_energy for Cluster3
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022037] Invalid sched_group_energy for CPU2
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022055] Invalid sched_group_energy for Cluster2
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022071] Invalid sched_group_energy for CPU1
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022089] Invalid sched_group_energy for Cluster1
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022106] Invalid sched_group_energy for CPU0
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.022124] Invalid sched_group_energy for Cluster0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.023806] devtmpfs: initialized
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.099361] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.099423] futex hash table entries: 1024 (order: 4, 65536 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.100361] pinctrl core: initialized pinctrl subsystem
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.103408] NET: Registered protocol family 16
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.110011] cpuidle: using governor menu
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.110101] Registered FIQ tty driver
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.110450] vdso: 2 pages (1 code @ ffffff8008576000, 1 data @ ffffff80087a4000)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.110523] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.110882] DMA: preallocated 256 KiB pool for atomic allocations
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.191271] genirq: Setting trigger mode 8 for irq 169 failed (gic_set_type+0x0/0x48)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.194373] console [pstore-1] enabled
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.194396] pstore: Registered ramoops as persistent store backend
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.194420] ramoops: attached 0xa0000@0x8000000, ecc: 0/0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.245630] console [ttyFIQ0] enabled
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.246732] Registered fiq debugger ttyFIQ0
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.269007] rockchip-pm rockchip-suspend: not set pwm-regulator-config
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.271929] vccio_sdio: regulator get failed, ret=-517
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.273325] vccio_dvp: regulator get failed, ret=-517
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.274731] vccio_flash: regulator get failed, ret=-517
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.278069] iommu: Adding device ff440000.hevc_service to group 0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.278928] iommu: Adding device ff442000.vpu_service to group 1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.279754] iommu: Adding device ff460000.vop to group 2
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.280504] iommu: Adding device ff4a0000.rkisp1 to group 3
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.282680] rk_iommu ff440440.iommu: can't get sclk
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.283963] rk_iommu ff442800.iommu: can't get sclk
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.285012] rk_iommu ff460f00.iommu: can't get sclk
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.286131] rk_iommu ff490800.iommu: can't get sclk
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.287122] rk_iommu ff4a8000.iommu: can't get sclk
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.288325] media: Linux media interface: v0.10
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.288918] Linux video capture interface: v2.00
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.292342] Advanced Linux Sound Architecture Driver Initialized.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.297129] rockchip-cpuinfo cpuinfo: Serial		: 48ba96c3a920ab17
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.298782] clocksource: Switched to clocksource arch_sys_counter
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.334243] thermal thermal_zone1: power_allocator: sustainable_power will be estimated
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.335649] NET: Registered protocol family 2
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.337460] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.338200] TCP bind hash table entries: 2048 (order: 4, 65536 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.338907] TCP: Hash tables configured (established 2048 bind 2048)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.339639] UDP hash table entries: 256 (order: 2, 24576 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.340261] UDP-Lite hash table entries: 256 (order: 2, 24576 bytes)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.341433] NET: Registered protocol family 1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.345154] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.381362] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.389267] NET: Registered protocol family 38
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.389855] io scheduler noop registered (default)
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.393713] phy phy-ff2c0000.syscon:usb2-phy@100.1: Failed to get VBUS supply regulator
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.402504] rk-vcodec vpu_combo: no regulator for vcodec
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.403740] rk-vcodec vpu_combo: failed on clk_get clk_cabac
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.404604] platform ff442000.vpu_service: probe device
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.406008] platform ff442000.vpu_service: drm allocator with mmu enabled
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.408822] platform ff440000.hevc_service: probe device
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.410174] platform ff440000.hevc_service: drm allocator with mmu enabled
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.412380] rk-vcodec vpu_combo: could not find power_model node
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.412977] rk-vcodec vpu_combo: init success
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.425419] dma-pl330 ff240000.dmac: Loaded driver for PL330 DMAC-241330
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.426088] dma-pl330 ff240000.dmac: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.427701] rockchip-pvtm ff010000.syscon:pmu-pvtm: failed to get rst 0 pmu
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.428821] rockchip-pvtm ff148000.syscon:pvtm: failed to get rst 0 core
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.431125] rockchip-system-monitor rockchip-system-monitor: system monitor probe
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.433522] Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.435900] ff030000.serial: ttyS0 at MMIO 0xff030000 (irq = 10, base_baud = 6250000) is a 16550A
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.438477] ff158000.serial: ttyS1 at MMIO 0xff158000 (irq = 13, base_baud = 2500000) is a 16550A
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.441045] ff178000.serial: ttyS5 at MMIO 0xff178000 (irq = 14, base_baud = 6250000) is a 16550A
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    0.447691] random: nonblocking pool is initialized
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.448059] [drm] Initialized drm 1.1.0 20060810
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.450464] [drm] Rockchip DRM driver version: v1.0.1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.451574] rockchip-drm display-subsystem: devfreq is not set
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.453897] rockchip-drm display-subsystem: bound ff460000.vop (ops 0xffffff80085cced0)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.454633] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.455262] [drm] No driver support for vblank timestamp query.
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.456069] rockchip-drm display-subsystem: failed to parse display resources
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.457700] rockchip-drm display-subsystem: master bind failed: -22
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.458378] rockchip-drm: probe of display-subsystem failed with error -22
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.460173] Unable to detect cache hierarchy for CPU 0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.463112] zram: Added device: zram0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.463565] lkdtm: No crash points registered, enable through debugfs
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.469968] Rockchip WiFi SYS interface (V1.00) ... 
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.471522] ff300000.usb supply vusb_d not found, using dummy regulator
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.472367] ff300000.usb supply vusb_a not found, using dummy regulator
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.475542] dwc2 ff300000.usb: Configuration mismatch. dr_mode forced to device
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.476272] dwc2 ff300000.usb: 128 invalid for host_nperio_tx_fifo_size. Check HW configuration.
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.477089] dwc2 ff300000.usb: 256 invalid for host_perio_tx_fifo_size. Check HW configuration.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.477988] dwc2 ff300000.usb: EPs: 10, dedicated fifos, 972 entries in SPRAM
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.702094] phy phy-ff2c0000.syscon:usb2-phy@100.1: charger = USB_SDP_CHARGER
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.704731] i2c /dev entries driver
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.709043] rk808 0-0020: Pmic Chip id: 0x8090
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.710015] rk808 0-0020: source: on=0x40, off=0x00
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.711459] rk808 0-0020: support dcdc3 fb mode:-22, 244187136
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.712367] rk808 0-0020: support pmic reset mode:0,1
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.719070] rk808-regulator rk808-regulator: there is no dvs0 gpio
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.719669] rk808-regulator rk808-regulator: there is no dvs1 gpio
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.720610] DCDC_REG1: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.724202] DCDC_REG2: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.727589] DCDC_REG3: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.730914] DCDC_REG4: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.733834] vccio_sdio: supplied by vcc_3v0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.735058] DCDC_REG5: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.737958] LDO_REG1: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.741484] LDO_REG2: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.744883] vccio_flash: supplied by vcc1v8_soc
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.745898] LDO_REG3: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.749424] LDO_REG4: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.752971] LDO_REG5: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.755629] LDO_REG6: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.756744] vcc_sd: Bringing 3000000uV into 3300000-3300000uV
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.759549] LDO_REG7: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.760665] vcc2v8_dvp: Bringing 600000uV into 2800000-2800000uV
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.763530] LDO_REG8: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.764640] vcc1v8_dvp: Bringing 600000uV into 1800000-1800000uV
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.767237] vccio_dvp: supplied by vcc1v8_dvp
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.769133] LDO_REG9: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.770248] vdd1v5_dvp: Bringing 600000uV into 1500000-1500000uV
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.773223] SWITCH_REG1: supplied by vcc5v0_sys
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.775689] SWITCH_REG2: supplied by vcc3v3_sys
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.778581] rk817-battery rk817-battery: Failed to find matching dt id
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.779810] rk817-charger rk817-charger: Failed to find matching dt id
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.784145] input: rk8xx_pwrkey as /devices/platform/ff180000.i2c/i2c-0/0-0020/input/input0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.790836] rk808-rtc rk808-rtc: rtc core: registered rk808-rtc as rtc0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.793550] rk3x-i2c ff180000.i2c: Initialized RK3xxx I2C bus at ffffff8008abe000
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.796900] rk3x-i2c ff1a0000.i2c: Initialized RK3xxx I2C bus at ffffff8008ac0000
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.799480] rkisp1 ff4a0000.rkisp1: rkisp1 driver version: v00.01.05
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.813127] Boot mode: normal
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.815387] rockchip-thermal ff280000.tsadc: Missing tshut mode property, using default (cru)
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.816222] rockchip-thermal ff280000.tsadc: Missing tshut-polarity property, using default (low)
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.817247] rk_tsadcv2_temp_to_code: Invalid conversion table: code=4095, temperature=2147483647
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.818581] rockchip-thermal ff280000.tsadc: tsadc is probed successfully!
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.822495] cpu cpu0: bin=0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.822922] cpu cpu0: leakage=10
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.839468] cpu cpu0: temp=37727, pvtm=53853 (53685 + 168)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.843376] cpu cpu0: pvtm-volt-sel=1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.844012] cpu cpu0: bin-scale=13
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.847963] cpu cpu0: avs=0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.848444] cpu cpu0: l=0 h=2147483647 hyst=5000 l_limit=0 h_limit=0
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.853540] cpu cpu0: failed to find power_model node
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.856871] Synopsys Designware Multimedia Card Interface Driver
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.860052] dwmmc_rockchip ff380000.dwmmc: num-slots property not found, assuming 1 slot is available
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.861133] dwmmc_rockchip ff380000.dwmmc: IDMAC supports 32-bit address mode.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.861874] dwmmc_rockchip ff380000.dwmmc: Using internal DMA controller.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.862502] dwmmc_rockchip ff380000.dwmmc: Version ID is 270a
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.863206] dwmmc_rockchip ff380000.dwmmc: DW MMC controller at irq 23,32 bit host data width,256 deep fifo
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.864299] dwmmc_rockchip ff380000.dwmmc: No vmmc regulator found
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.864898] dwmmc_rockchip ff380000.dwmmc: No vqmmc regulator found
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.866067] dwmmc_rockchip ff380000.dwmmc: allocated mmc-pwrseq
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.880204] mmc_host mmc0: Bus speed (slot 0) = 400000Hz (slot req 400000Hz, actual 400000HZ div = 0)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.893966] dwmmc_rockchip ff380000.dwmmc: 1 slots initialized
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.904715] rockchip-dmc dmc: unable to get devfreq-event device : dfi
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.908302] rknandc_base v1.1 2017-01-11
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.909629] rknandc ff3b0000.nandc: rknandc_probe clk rate = 150000000
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    0.910411] rkflash_dev_init enter
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.910730] ...nandc_flash_init enter...
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.911161] No.1 FLASH ID:98 da 90 15 76 16
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.911558] SFTL version: 5.0.56 20210329
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.918752] mmc_host mmc0: Bus speed (slot 0) = 300000Hz (slot req 300000Hz, actual 300000HZ div = 0)
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.958632] ...FtlVpcCheckAndModify enter...
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.959431] mmc_host mmc0: Bus speed (slot 0) = 200000Hz (slot req 200000Hz, actual 200000HZ div = 0)
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.983201] FtlCheckVpc 1cd = 7d  e
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    0.983536] FtlCheckVpc 1ce = 7f  0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.985244] rkflash[0] init success
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    0.994119] rkflashd vendor storage init ok !
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.001293] mmc_host mmc0: Bus speed (slot 0) = 100000Hz (slot req 100000Hz, actual 100000HZ div = 0)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.002978]  rkflash0: p1 p2 p3 p4 p5 p6 p7 p8 p9
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.007577] rkflash_dev_init device register as blk dev, ret= 0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.014344] ip_tables: (C) 2000-2006 Netfilter Core Team
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.015443] NET: Registered protocol family 17
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.015975] NET: Registered protocol family 15
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.016398] [WLAN_RFKILL]: Enter rfkill_wlan_init
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.017459] [WLAN_RFKILL]: Enter rfkill_wlan_probe
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.017963] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi_chip_type = rtl8189fs
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.018599] [WLAN_RFKILL]: wlan_platdata_parse_dt: enable wifi power control.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.019250] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi power controled by gpio.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.020033] [WLAN_RFKILL]: wlan_platdata_parse_dt: get property: WIFI,host_wake_irq = 5, flags = 0.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.020867] [WLAN_RFKILL]: wlan_platdata_parse_dt: The ref_wifi_clk not found !
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.021525] [WLAN_RFKILL]: rfkill_wlan_probe: init gpio
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.022013] [WLAN_RFKILL]: Exit rfkill_wlan_probe
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.022597] [BT_RFKILL]: Enter rfkill_rk_init
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.024244] flash vendor_init_thread!
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.024594] flash vendor storage:20170308 ret = -1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.024869] ov7251 2-0060: driver version: 00.01.01
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    1.025079] ov7251 2-0060: Failed to get pwdn-gpios
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.029196] ov7251 2-0060: Unexpected sensor id(000000), ret(-5)
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    1.031098] Registered cp15_barrier emulation handler
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    1.031650] Registered setend emulation handler
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.035595] rga2: Driver loaded successfully ver:4.00
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.036503] rga2: Module initialized.
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    1.038832] rockchip-dmc dmc: current ATF version 0x105!
+Aug  5 09:00:12 rk3326_robot64 user.notice kernel: [    1.039334] rockchip-dmc dmc: read tf version 0x105!
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.042308] rockchip-dmc dmc: Failed to get leakage
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.043175] rockchip-dmc dmc: pvtm-volt-sel=1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.044661] rockchip-dmc dmc: avs=0
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.045077] rockchip-dmc dmc: failed to get vop bandwidth to dmc rate
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.045660] rockchip-dmc dmc: failed to get vop pn to msch rl
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.046647] rockchip-dmc dmc: l=-2147483648 h=2147483647 hyst=0 l_limit=0 h_limit=0
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.049841] devfreq dmc: Couldn't update frequency transition information.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.055619] asoc-simple-card rk809-sound: rk817-hifi <-> ff070000.i2s mapping ok
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.056348] asoc-simple-card rk809-sound: ASoC: no source widget found for MICBIAS1
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.057047] asoc-simple-card rk809-sound: ASoC: Failed to add route MICBIAS1 -> direct -> Mic Jack
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.057863] asoc-simple-card rk809-sound: ASoC: no sink widget found for IN1P
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.058498] asoc-simple-card rk809-sound: ASoC: Failed to add route Mic Jack -> direct -> IN1P
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.059281] asoc-simple-card rk809-sound: ASoC: no source widget found for HPOL
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.059952] asoc-simple-card rk809-sound: ASoC: Failed to add route HPOL -> direct -> Headphone Jack
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.060779] asoc-simple-card rk809-sound: ASoC: no source widget found for HPOR
+Aug  5 09:00:12 rk3326_robot64 user.err kernel: [    1.061436] asoc-simple-card rk809-sound: ASoC: Failed to add route HPOR -> direct -> Headphone Jack
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.064522] ov7251 2-0060: driver version: 00.01.01
+Aug  5 09:00:12 rk3326_robot64 user.warn kernel: [    1.065220] ov7251 2-0060: Failed to get pwdn-gpios
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.069593] ov7251 2-0060: Detected OV007750 sensor
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.071636] rkisp1: Async subdev notifier completed
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.074297] input: gpio_keys as /devices/platform/gpio_keys/input/input1
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.077197] rk808-rtc rk808-rtc: setting system clock to 2017-08-05 09:00:12 UTC (1501923612)
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.122340] vccio_sdio: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.122668] vccio_dvp: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.122989] vccio_flash: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.123670] vccio_sd: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.124412] vcc_sd: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.125736] vcc3v3_lcd: disabling
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.126684] rkisp1 ff4a0000.rkisp1: clear unready subdev num: 0
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.128059] ALSA device list:
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.128336]   #0: rockchip,rk809-codec
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.133200] VFS: Mounted root (squashfs filesystem) readonly on device 31:6.
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.135934] devtmpfs: mounted
+Aug  5 09:00:12 rk3326_robot64 user.info kernel: [    1.136567] Freeing unused kernel memory: 384K
+Aug  5 09:00:12 rk3326_robot64 daemon.info kernel: [    1.567393] udevd[129]: starting version 3.2.7
+Aug  5 09:00:13 rk3326_robot64 daemon.err kernel: [    1.595144] udevd[129]: specified group 'kvm' unknown
+Aug  5 09:00:13 rk3326_robot64 daemon.info kernel: [    1.614723] udevd[130]: starting eudev-3.2.7
+Aug  5 09:00:14 rk3326_robot64 user.err kernel: [    2.775826] EXT4-fs (rkflash0p8): couldn't mount as ext3 due to feature incompatibilities
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    2.777334] EXT4-fs (rkflash0p8): mounting ext2 file system using the ext4 subsystem
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    2.784207] EXT4-fs (rkflash0p8): mounted filesystem without journal. Opts: (null)
+Aug  5 09:00:14 rk3326_robot64 user.err kernel: [    2.965422] EXT4-fs (rkflash0p9): couldn't mount as ext3 due to feature incompatibilities
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    2.966733] EXT4-fs (rkflash0p9): mounting ext2 file system using the ext4 subsystem
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    2.973511] EXT4-fs (rkflash0p9): mounted filesystem without journal. Opts: (null)
+Aug  5 09:00:14 rk3326_robot64 user.err kernel: [    3.153604] EXT4-fs (rkflash0p7): couldn't mount as ext3 due to feature incompatibilities
+Aug  5 09:00:14 rk3326_robot64 user.err kernel: [    3.155073] EXT4-fs (rkflash0p7): couldn't mount as ext2 due to feature incompatibilities
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    3.158183] EXT4-fs (rkflash0p7): mounted filesystem without journal. Opts: (null)
+Aug  5 09:00:14 rk3326_robot64 daemon.notice ntpd[536]: ntpd 4.2.8p10@1.3728-o Tue Jan  4 10:48:19 UTC 2022 (1): Starting
+Aug  5 09:00:14 rk3326_robot64 daemon.info ntpd[536]: Command line: ntpd -gq
+Aug  5 09:00:14 rk3326_robot64 auth.info sshd[542]: Server listening on 0.0.0.0 port 23909.
+Aug  5 09:00:14 rk3326_robot64 daemon.info ntpd[536]: proto: precision = 0.875 usec (-20)
+Aug  5 09:00:14 rk3326_robot64 daemon.err ntpd[536]: restrict: ignoring line 11, address/host '[::1]' unusable.
+Aug  5 09:00:14 rk3326_robot64 daemon.info ntpd[536]: Listen and drop on 0 v4wildcard 0.0.0.0:123
+Aug  5 09:00:14 rk3326_robot64 daemon.info ntpd[536]: Listen normally on 1 lo 127.0.0.1:123
+Aug  5 09:00:14 rk3326_robot64 daemon.info ntpd[536]: Listening on routing socket on fd #18 for interface updates
+Aug  5 09:00:14 rk3326_robot64 user.info kernel: [    3.486341] file system registered
+Aug  5 09:00:15 rk3326_robot64 user.info kernel: [    3.604591] read descriptors
+Aug  5 09:00:15 rk3326_robot64 user.info kernel: [    3.604913] read strings
+Aug  5 09:00:15 rk3326_robot64 user.info kernel: [    4.029865] vendor storage:20190527 ret = -1
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.608847] dwc2 ff300000.usb: bound driver configfs-gadget
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.768273] dwc2 ff300000.usb: new device is high-speed
+Aug  5 09:00:16 rk3326_robot64 user.warn kernel: [    4.771092] 
+Aug  5 09:00:16 rk3326_robot64 user.warn kernel: [    4.771258] =======================================================
+Aug  5 09:00:16 rk3326_robot64 user.warn kernel: [    4.771872] ==== Launching Wi-Fi driver! (Powered by Rockchip) ====
+Aug  5 09:00:16 rk3326_robot64 user.warn kernel: [    4.772428] =======================================================
+Aug  5 09:00:16 rk3326_robot64 user.warn kernel: [    4.773016] Realtek 8723DS SDIO WiFi driver (Powered by Rockchip,Ver v5.3.12_28613.20180703) init.
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.773830] [WLAN_RFKILL]: rockchip_wifi_power: 1
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.774252] [BT_RFKILL]: rfkill_get_bt_power_state: rfkill-bt driver has not Successful initialized
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.775084] [WLAN_RFKILL]: wifi turn on power. -1
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.775509] mmc0:mmc host rescan start!
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.802565] dwc2 ff300000.usb: new address 43
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.844903] android_work: sent uevent USB_STATE=CONNECTED
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.960972] configfs-gadget gadget: high-speed config #1: b
+Aug  5 09:00:16 rk3326_robot64 user.info kernel: [    4.961729] android_work: sent uevent USB_STATE=CONFIGURED
+Aug  5 09:00:17 rk3326_robot64 user.info kernel: [    5.775862] [WLAN_RFKILL]: rockchip_wifi_get_oob_irq: Enter
+Aug  5 09:00:17 rk3326_robot64 daemon.info dnsmasq[618]: started, version 2.78 cachesize 150
+Aug  5 09:00:17 rk3326_robot64 daemon.info dnsmasq[618]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect inotify
+Aug  5 09:00:17 rk3326_robot64 daemon.info dnsmasq-dhcp[618]: DHCP, IP range 192.168.100.50 -- 192.168.100.150, lease time 1h
+Aug  5 09:00:17 rk3326_robot64 daemon.info dnsmasq[618]: using nameserver 8.8.8.8#53 for domain google 
+Aug  5 09:00:17 rk3326_robot64 daemon.info dnsmasq[618]: read /etc/hosts - 2 addresses
+Aug  5 09:00:17 rk3326_robot64 user.warn kernel: [    5.897694] ===>[qf] robot last time reboot is normal
+Aug  5 09:00:17 rk3326_robot64 daemon.info : starting pid 635, tty '/dev/ttyFIQ0': '/sbin/getty -L  ttyFIQ0 0 vt100 '
+Aug  5 09:00:18 rk3326_robot64 syslog.info syslogd exiting
