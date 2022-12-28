@@ -47,3 +47,44 @@ done
 #/root/.bash_history
 #/root/.bash_logout
 #/root/.bashrc
+
+echo '(1) -------------------------------------------------'
+#!/bin/bash
+sum=0
+read -p '请输入一个1-100之间的整数：' a
+for ((i=1;i<=$a;i++))
+do
+    sum=$[$sum + $i]
+done
+echo "$sum"
+#printf "\n"  #在每次循环换行
+
+echo '(2) -------------------------------------------------'
+#!/bin/bash
+n=0
+for i in {1..100}
+do
+	n=`expr $i + $n`
+done
+echo $n
+
+echo '(3) -------------------------------------------------'
+#!/bin/bash
+k=0
+l=1
+while ((l<=100))
+do
+	k=`expr $k + $l`
+	((l++))
+done
+echo $k
+
+echo '(4) -------------------------------------------------'
+#类似C语言循环写法
+#!/bin/bash
+
+for (( counter=1; counter<=10; counter++ ))
+do
+echo -n "$counter "
+done
+printf "\n"

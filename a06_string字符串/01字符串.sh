@@ -26,14 +26,38 @@ echo $greeting $greeting_1
 echo '(4) -----------------------------------------------------------'
 string="abcd"
 echo ${#string} #输出4
-#(5)提取子字符串
+#(5)提取子字符串/字符串切片
 string="alibaba is a great company"
-echo ${string:1:4} #输出 liba
+#输出 liba
+Str="Learn Bash Commands from UbuntuPit"
+#subStr=${Str:0:20}
+subStr=$(echo $Str | cut -d ' ' -f 1-3)
+echo $subStr
+echo ${string:1:4}
 #(6)查找子字符串
 echo '(5) -----------------------------------------------------------'
 string="alibaba is a great company"
-echo `expr index "$string" alibaba`
-echo `expr index "$string" is`
-echo `expr index "$string" a`
-echo `expr index "$string" great`
-echo `expr index "$string" company`
+echo $(expr index "$string" alibaba)
+echo $(expr index "$string" is)
+echo $(expr index "$string" a)
+echo $(expr index "$string" great)
+echo $(expr index "$string" company)
+echo '(6) -----------------------------------------------------------'
+#添加两个值
+echo -n "Enter first number:"
+read x
+echo -n "Enter second number:"
+read y
+((sum = x + y))
+echo "The result of addition=$sum"
+echo '(7) -----------------------------------------------------------'
+sum=0
+for ((counter = 1; counter < 5; counter++)); do
+	echo -n "Enter Your Number:"
+	read n
+	((sum += n))
+	#echo -n "$counter "
+done
+printf "\n"
+echo "Result is: $sum"
+

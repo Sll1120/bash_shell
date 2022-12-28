@@ -38,7 +38,7 @@ echo "It is a test"
 #输出：
 #OK!It si a test
 #5)显示结果重定向至文件
-echo "It is a test" > myfile.txt
+echo "It is a test" > z_01echo.txt
 #6)若需要原样输出字符串（不进行转义），请使用单引号。
 #例如：
 echo '$name\"'
@@ -46,3 +46,6 @@ echo '$name\"'
 echo `date`
 #结果将显示当前日期
 #从上面可看出，双引号可有可无，单引号主要用在原样输出中。
+echo "打印文本"
+echo -n "打印不带换行符的文本"
+echo -e "\n删除\t特殊\t字符\n"
