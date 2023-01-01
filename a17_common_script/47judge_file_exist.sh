@@ -1,4 +1,10 @@
 #!/bin/bash
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-01-01 11:53
+# * Filename : 47judge_file_exist.sh
+# **********************************************************
 #filename1=/mnt/res/vapp/appd.conf
 #filename2=/mnt/res/vapp/AC.conf
 filename1=./appd.conf
@@ -14,6 +20,7 @@ else
     echo -e "\e[31mappd.conf file does not exist\e[0m"
 fi
 #判断AC.conf是否存在
+echo '-----------------------完美分割线--------------------------------'
 if [ -f $filename2 ]; 
 then
     echo -e "\e[32mAC.conf file exists\e[0m"
