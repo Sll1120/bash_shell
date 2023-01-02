@@ -19,3 +19,4 @@ else
 fi
 echo "当前时间是:$(date +"%Y-%m-%d %H:%M:%S")"
 echo -e "\033[34m$msg\033[0m"
+

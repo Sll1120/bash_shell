@@ -18,7 +18,7 @@ tmp=0
 if [ $num1 -gt $num2 ]; then
 	tmp=$num1
 	num1=$num2
-	num2=tmp
+	num2=$tmp
 fi
 # 如果 num1 大于 num3,就把 num1 和 num3 对调,确保 num1 变量中存的是最小值
 if [ $num1 -gt $num3 ]; then

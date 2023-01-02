@@ -6,15 +6,16 @@
 # * Filename : 45functions.sh
 # **********************************************************
 #定义函数的格式1
-test (){
+test() {
 	read -p "pls input:" value
-	return $[$value * 2]
+	return $(($value * 2))
 }
-test 
+test
 echo $?
 
 #定义函数的格式2
 function example {
-echo "Hello world!"
+	echo "Hello world!"
 }
 example
+
