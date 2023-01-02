@@ -1,2 +1,0 @@
-ln libmosquitto.so.1.4.15 libmosquitto.so
-ln libmosquitto.so.1.4.15 libmosquitto.so.1

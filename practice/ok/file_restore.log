@@ -1,7 +1,0 @@
-restore: skip non-exist file: /mnt/sys//config_file.conf
-restore: skip non-exist file: /mnt/sys//Lidar1_5_patch.conf
-restore: skip non-exist file: /mnt/sys//Lidar2_0_patch.conf
-restore: skip non-exist file: /mnt/sys//ValleyIR_patch.conf
-restore: skip non-exist file: /mnt/sys//MesaL02_patch.conf
-restore: skip non-exist file: /mnt/sys//wifi_channel_plan.config
-restore: skip non-exist file: /mnt/sys//AC.conf
