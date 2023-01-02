@@ -1,6 +1,10 @@
 #!/bin/bash
-#by suliangliang on 2022-08-02
-#item: 判断文件或目录是否存在
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-01-02 16:35
+# * Filename : 46judge_file_dir_exist.sh
+# **********************************************************
 if [ $# -eq 0 ]; then
 	echo "未输入任何参数,请输入参数"
 	echo "用法:$0 [文件名|目录名]"

@@ -27,3 +27,14 @@ echo "显示纳秒"
 date +%N
 echo "组合显示"
 date +"%Y%m%d %H:%M:%S"
+
+year=`date +%Y`
+month=`date +%m`
+day=`date +%d`
+hour=`date +%H`
+minute=`date +%M`
+second=`date +%S`
+echo `date`
+echo "Current Date is: $year-$month-$day"
+echo "Current Time is: $hour:$minute:$second"
+
