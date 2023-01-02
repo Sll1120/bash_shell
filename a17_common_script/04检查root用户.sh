@@ -2,8 +2,15 @@
 # **********************************************************
 # * Author : liangliangSu
 # * Email : sll917@hotmail.com
-# * Create time : 2022-12-22 10:05
-# * Filename : change_string.sh
+# * Create time : 2022-11-26 11:47
+# * Filename : 04check_root.sh
 # **********************************************************
-sed -i "s/2.4.50/2.5.06/g" `grep "2.4.50" -rl ./*/CAL/`
-sed -i "s/1.0.73/1.0.80/g" `grep "1.0.73" -rl ./*/CAL/`
+#!/bin/bash
+ROOT_UID=0
+if [ "$UID" -eq "$ROOT_UID" ]; then
+	echo "You are root."
+else
+	echo "你不是root"
+fi
+exit 0
+
