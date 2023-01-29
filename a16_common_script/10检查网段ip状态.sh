@@ -12,13 +12,13 @@ read -p "请输入你需要检测的网段IP地址前3数字:" num
 for HOST in $(seq 1 20); do
 	ping -c 2 -i 0.3 -W 1 $num.$HOST &>/dev/null
 
-	#if [ "$result" == 0 ];then
-	if [ $? == 0 ]; then
-		echo -e "\e[32;1m$num.$HOST is up \e[0m"
+	#if [ "$result" -eq 0 ];then
+	if [ $? -eq 0 ]; then
+		echo -e "\e[32m$num.$HOST is up \e[0m"
 		echo "$num.$HOST" >>/tmp/up.txt
 
 	else
-		echo -e "\e[;31m$num.$HOST is down \e[0m"
+		echo -e "\e[31m$num.$HOST is down \e[0m"
 		echo "$num.$HOST" >>/tmp/down.txt
 	fi
 done
