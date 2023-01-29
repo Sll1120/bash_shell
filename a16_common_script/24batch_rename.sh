@@ -16,4 +16,3 @@ do
 	#grep $1 $file | awk -F, '{print $2,$5,$6}'      #将输入参数1与当前文件内容进行匹配
 	mv $file `echo ${file#*_}`
 done
-rm rename.sh
