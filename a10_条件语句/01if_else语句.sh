@@ -7,8 +7,8 @@
 #======================================
 : '
 if 语句通过关系运算符判断表达式的真假来决定执行哪个分支,Shell 有三种 if ... else语句：
-- if ... fi 语句； 
-- if ... else ... fi 语句； 
+- if ... fi 语句；
+- if ... else ... fi 语句；
 - if ... elif ... else ... fi 语句;
 '
 : '
@@ -27,13 +27,11 @@ echo '(1) -----------------------------------------------------------'
 #!/bin/sh
 a=10
 b=20
-if [ $a == $b ]
-then
-    echo "a is equal to b"
+if [ $a == $b ]; then
+	echo "a is equal to b"
 fi
-if [ $a != $b ]
-then
-    echo "a is not equal to b"
+if [ $a != $b ]; then
+	echo "a is not equal to b"
 fi
 #运行结果：
 #a is not equal to b
@@ -53,11 +51,10 @@ echo '(2) -----------------------------------------------------------'
 #!/bin/sh
 a=10
 b=20
-if [ $a == $b ]
-then
-    echo "a is equal to b"
+if [ $a == $b ]; then
+	echo "a is equal to b"
 else
-    echo "a is not equal to b"
+	echo "a is not equal to b"
 fi
 #执行结果：
 #a is not equal to b
@@ -83,17 +80,14 @@ echo '(3) -----------------------------------------------------------'
 #!/bin/sh
 a=10
 b=20
-if [ $a == $b ]
-then
-    echo "a is equal to b"
-elif [ $a -gt $b ]
-then
-    echo "a is greater than b"
-elif [ $a -lt $b ]
-then
-    echo "a is less than b"
+if [ $a == $b ]; then
+	echo "a is equal to b"
+elif [ $a -gt $b ]; then
+	echo "a is greater than b"
+elif [ $a -lt $b ]; then
+	echo "a is less than b"
 else
-    echo "None of the condition met"
+	echo "None of the condition met"
 fi
 #运行结果：
 #a is less than b
@@ -101,20 +95,18 @@ fi
 #if test $[2*3] -eq $[1+5]; then echo 'The two numbers are equal!'; fi;
 #if ... else 语句也经常与 test 命令结合使用，如下所示：
 echo '(4) -----------------------------------------------------------'
-num1=$[2*3]
-num2=$[1+5]
-if test $[num1] -eq $[num2]
-then
-    echo 'The two numbers are equal!'
+num1=$((2 * 3))
+num2=$((1 + 5))
+if test $((num1)) -eq $((num2)); then
+	echo 'The two numbers are equal!'
 else
-    echo 'The two numbers are not equal!'
+	echo 'The two numbers are not equal!'
 fi
 echo '(5) -----------------------------------------------------------'
-if [ ${num1} -eq ${num2} ]
-then
-    echo 'The two numbers are equal!'
+if [ ${num1} -eq ${num2} ]; then
+	echo 'The two numbers are equal!'
 else
-    echo 'The two numbers are not equal!'
+	echo 'The two numbers are not equal!'
 fi
 #输出：
 #The two numbers are equal!

@@ -18,7 +18,7 @@ url="http://see.xidian.edu.cn/cpp/view/2738.html"
 . ./subscript.sh
 echo $url
 #执行脚本：
-$chomd +x ma_in.sh
+$chomd +x main.sh
 ./main.sh
 #http://see.xidian.edu.cn/cpp/view/2738.html
 #$
