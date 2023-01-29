@@ -1,6 +1,6 @@
 #!/bin/bash
 #======================================
-# File name:shell_01定义数组.sh
+# File name:_01定义数组.sh
 # Author:liangliangSu
 # Email:sll917@hotmail.com
 # Date of writing:2022-10-06 12:27
