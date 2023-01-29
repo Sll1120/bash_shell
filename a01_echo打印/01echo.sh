@@ -1,10 +1,10 @@
 #!/bin/bash
-#======================================
-# File name:shell_01echo.sh
-# Author:liangliangSu
-# Email:sll917@hotmail.com
-# Date of writing:2022-10-06 12:52
-#======================================
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-01-29 08:44
+# * Filename : 01echo1.sh
+# **********************************************************
 : '
 echo 是 Shell 的一个内部指令，用于在屏幕上打印出指定的字符串。命令格式：
 echo arg

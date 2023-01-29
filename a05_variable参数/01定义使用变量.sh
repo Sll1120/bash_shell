@@ -17,4 +17,3 @@ variableName="value"
 '
 myUrl="http://see.xidian.edu.cn/cpp/linux/"
 myNum=100
-
