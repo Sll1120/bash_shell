@@ -50,3 +50,12 @@ echo ${myUrl}
 #$myUrl="http://see.xidian.edu.cn/cpp/shell/"，
 #使用变量的时候才加美元符（$）。
 
+echo '--------------------------------------------------------------------'
+#单引号---强引用（所见即所得，不会解析）
+#双引号---弱引用（解析变量的值）
+ng1=abc
+echo $ng1
+echo "$ng1 def"
+# abc def
+echo '$ng1 def'
+# $ng1 def
