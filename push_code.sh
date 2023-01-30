@@ -15,6 +15,6 @@ git push -u gitee +master
 #git add .
 #git commit -m "Released in `date "+%Y-%m-%d %H:%M"`"
 #echo -e "\033[32m start push code to github.\033[0m"
-#sleep 1
+sleep 1
 #git push github master
-#git push -u github +master
+git push -u github +master
