@@ -1,6 +1,11 @@
 #!/bin/bash
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-02-04 09:28
+# * Filename : 51print_time1.sh
+# **********************************************************
 # 打印各种时间格式 
-
 echo "显示星期简称(如:Sun)"
 date +%a
 echo "显示星期全称(如:Sunday)"
@@ -37,4 +42,3 @@ second=`date +%S`
 echo `date`
 echo "Current Date is: $year-$month-$day"
 echo "Current Time is: $hour:$minute:$second"
-
