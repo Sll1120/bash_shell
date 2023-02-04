@@ -72,3 +72,12 @@ fi
 -ge     检测左边的数是否大等于右边的，如果是，则返回 true。  [ $a -ge $b ] 返回 false。
 -le     检测左边的数是否小于等于右边的，如果是，则返回 true。[ $a -le $b ] 返回 true。
 '
+# 内存使用状态提取
+free_used=$(free -m | grep "内存" | awk '{print $3/$2*100}')
+echo ${free_used%.*}
+if [ ${free_used%.*} -ge 40 ]
+then
+	echo "主机内存使用超过了40%，当前已经使用了${free_used%.*}%"
+else
+	echo "当前内存足够使用"
+fi
