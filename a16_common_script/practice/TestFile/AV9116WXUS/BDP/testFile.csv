@@ -1,0 +1,153 @@
+﻿cmd,,lower,upper,isFlag,UniqueCode,return_info,Type,tryPerio,tryTimes
+*DS0,测试模式关闭,,,1,setInitTestMode_OFF,,BDP,200,3
+?DS,检测测试模式状态,0,0,1,checkInitTestMode_OFF,,BDP,200,5
+?BA,检测电池电压信息Query Battery Voltage,13500,17000,1,checkBAT_V_1,,BDP,200,5
+?BA,检测电池电流信息Query Battery Current,80,400,1,checkBAT_A_1,,BDP,200,10
+?BC,检测电池未充电电压信息Query Charging voltage,1,4000,1,checkChargeBAT_V_1,,BDP,200,5
+?BC,检测电池充电电流信息Query Charging Current,0,0,1,checkChargeBAT_A_1,,BDP,200,5
+?BC,检测电池充电状态信息Query Charging State,0,0,1,checkChargeBAT_ST_1,,BDP,200,5
+currentTest_ON,充电弹片接触,,,1,currentTest_ON,,,200,5
+?BA,检测电池电压信息Query Battery Voltage,13500,17000,1,checkBAT_V_dyna,,BDP,200,5
+?BA,检测电池电流信息Query Battery Current,0,17000,1,checkBAT_A_dyna,,BDP,200,5
+delay,,2,,1,delayforcurrent1,,SPE,200,3
+?BC,检测电池充电电压信息Query Charging voltage,16500,20000,1,checkChargeBAT_V_dyna,,BDP,200,5
+?BC,检测电池充电电流信息Query Charging Current,450,650,1,checkChargeBAT_A_dynaEqu,,BDP,200,5
+?BC,检测电池充电状态信息Query Charging State,1,1,1,checkChargeBAT_ST_dyna,,BDP,200,5
+currentTest_OFF,充电弹片断开,,,1,currentTest_OFF,,,200,3
+delay,,3,,1,delayforcurrent5,,SPE,200,3
+?BA,检测电池电压信息Query Battery Voltage,13500,17000,1,checkBAT_V_2,,BDP,200,5
+?BA,检测电池电流信息Query Battery Current,60,500,1,checkBAT_A_2,,BDP,200,5
+?BC,检测电池充电电压信息Query Charging voltage,1,4000,1,checkChargeBAT_V_2,,BDP,200,5
+?BC,检测电池充电电流信息Query Charging Current,0,0,1,checkChargeBAT_A_2,,BDP,200,5
+?BC,检测电池充电状态信息Query Charging State,0,0,1,checkChargeBAT_ST_2,,BDP,200,5
+*DS1,测试模式开启,,,1,setTestMode_ON,,BDP,200,3
+?DS,检测测试模式状态,1,1,1,checkTestMode_ON,,BDP,200,5
+*WX,写入整机二维码SKU和SN信息,28,28,1,setQRCode,,BDP,500,3
+*WD,写入整机二维码HWD信息,32,32,1,setHWD,,BDP,500,3
+delay,,2,,1,delayforreboot,,SPE,200,3
+*WP2,重启上下位机,,,1,setReboot,,BDP,200,3
+currentTest_ON,充电弹片接触,,,0,currentTest_ON2,,,200,3
+currentTest_OFF,充电弹片断开,,,0,currentTest_OFF2,,,200,3
+delay,,5,,1,delayforreboot1,,SPE,200,3
+*DS1,测试模式开启,,,1,setTestMode_ON_2,,BDP,200,3
+?DS,检测测试模式状态,1,1,1,checkTestMode2_ON,,BDP,200,5
+?WX,读取SKU以及SN （判断长度以及是否匹配QR信息）,28,28,1,checkQRCode,,BDP,200,5
+?WX,查询factoryCode,V8,V8,0,checkFactoryCode,,BDP,200,5
+?WD,读取HWD（判断长度以及是否匹配QR信息）,32,32,1,checkHWDinfo_QR,,BDP,200,5
+*NP1,开启导航板电源Nav Board Poweron,,,1,setNavBoard_PowerON,,BDP,200,3
+?DX0,判断左磁传感器是否触发,0,0,1,checkMAGSensorL_OFF,,BDP,200,5
+?DX1,判断右磁传感器是否触发,0,0,1,checkMAGSensorR_OFF,,BDP,200,5
+?DX2,判断中左磁传感器是否触发,0,0,1,checkMAGSensorCL_OFF,,BDP,200,5
+?DX4,判断中右磁传感器是否触发,0,0,1,checkMAGSensorCR_OFF,,BDP,200,5
+?DX6,判断尘盒磁传感器未触发,0,0,1,checkDustBMAGSensor_OFF,,BDP,200,5
+*DC64,激活吸尘风机电机工作,,,1,activeSuctionMotor,,BDP,200,8
+*DD032,激活主刷马达工作,,,1,activeMainBrushMotor,,BDP,200,3
+*DM1001F4,激活右轮马达工作,,,1,activeRWheelMotor_Forward,,BDP,200,3
+*DM0001F4,激活左轮马达工作,,,1,activeLWheelMotor_Forward,,BDP,200,3
+*DB032,激活左边刷马达工作,,,1,activeLSideBrushMotor,,BDP,200,3
+*DB132,激活右边刷马达工作,,,0,activeRSideBrushMotor,,BDP,200,3
+?UI,检测按键放开状态,0,0,1,checkBtnState,,BDP,200,5
+?DW1,检测右轮是否落下,1,1,1,checkRWheelDown,,BDP,200,5
+?DW0,检测左轮是否落下,1,1,1,checkLWheelDown,,BDP,200,5
+?DT0,检测左bumper是否触发,0,0,1,checkLBumper_OFF,,BDP,200,5
+?DT1,检测右bumper是否触发,0,0,1,checkRBumper_OFF,,BDP,200,5
+?DT2,检测上左bumper是否触发,0,0,1,checkTopLBumper_OFF,,BDP,200,5
+?DT3,检测上右bumper是否触发,0,0,1,checkTopRBumper_OFF,,BDP,200,5
+?DT8,检测上中bumper是否触发,0,0,1,checkTopCBumper_OFF,,BDP,200,5
+?DD,检测主刷工作电流,100,580,1,checkMainBrushMotor_A,,BDP,200,5
+?DM1,检测右轮电机工作电流,40,140,1,checkRWheelMotor_A_Forward,,BDP,200,5
+?DR1,检测右轮电机工作速度,400,580,1,checkRWheelMotor_RPM_Forward,,BDP,200,5
+?DM0,检测左轮电机工作电流,40,140,1,checkLWheelMotor_A_Forward,,BDP,200,5
+?DR0,检测左轮电机工作速度,400,580,1,checkLWheelMotor_RPM_Forward,,BDP,200,5
+*DM1101F4,激活右轮马达工作,,,1,activeRWheelMotor_reverse,,BDP,200,3
+*DM0101F4,激活左轮马达工作,,,1,activeLWheelMotor_reverse,,BDP,200,3
+?DB0,检测左边刷电机工作电流,10,50,1,checkLSideBrushMotor_A,,BDP,200,5
+?DB1,检测右边刷电流工作电流,10,50,0,checkRSideBrushMotor_A,,BDP,200,5
+?DC,检测吸尘电机工作速度,180,320,1,checkSuctionMotor_A,,BDP,200,5
+?DM1,检测右轮电机工作电流,40,140,1,checkRWheelMotor_A_reverse,,BDP,200,5
+?DR1,检测右轮电机工作速度,400,580,1,checkRWheelMotor_RPM_reverse,,BDP,200,5
+?DM0,检测左轮电机工作电流,40,140,1,checkLWheelMotor_A_reverse,,BDP,200,5
+?DR0,检测左轮电机工作速度,400,580,1,checkLWheelMotor_RPM_reverse,,BDP,200,5
+*DD000,激活主刷马达停止,,,1,stopMainBrushMotor,,BDP,200,3
+*DM110000,激活右轮马达停止,,,1,stopRWheelMotor,,BDP,200,3
+*DM010000,激活左轮马达停止,,,1,stopLWheelMotor,,BDP,200,3
+*DB000,激活左边刷马达停止,,,1,stopLSideBrushMotor,,BDP,200,3
+*DB100,激活右边刷马达停止,,,0,stopRSideBrushMotor,,BDP,200,3
+*DC00,激活吸尘风机电机停止,,,1,stopSuctionMotor,,BDP,200,3
+PushRobot,气缸运动,,,1,PushRobot,,,500,20
+?DU8,检测左免碰传感器值,600,4000,1,checkLFrontFWDArray_ADC,,BDP,200,5
+?DU9,检测中免碰传感器值,600,4000,1,checkCFrontFWDArray_ADC,,BDP,200,5
+?DUA,检测右边免碰传感器值,600,4000,1,checkRFrontFWDArray_ADC,,BDP,200,5
+?DU0,检测左Cliff值,600,2000,1,checkFrontLCliff_ADC,,BDP,200,5
+?DU1,检测右Cliff值,600,2000,1,checkFrontRCliff_ADC,,BDP,200,5
+?DU2,检测中左Cliff值,600,2000,1,checkMiddleLCliff_ADC,,BDP,200,5
+?DU3,检测中右Cliff值,600,2000,1,checkMiddleRCliff_ADC,,BDP,200,5
+?DU7,检测左沿墙值,200,3000,1,checkLAlongWallSensor_ADC,,BDP,200,5
+?DU6,检测右沿墙值,200,3000,1,checkRAlongWallSensor_ADC,,BDP,200,5
+?DX0,判断左磁传感器是否触发,1,1,0,checkMAGSensorL_ON,,BDP,200,5
+?DX1,判断右磁传感器是否触发,1,1,0,checkMAGSensorR_ON,,BDP,200,5
+?DX2,判断中左磁传感器是否触发,1,1,1,checkMAGSensorCL_ON,,BDP,200,5
+?DX4,判断中右磁传感器是否触发,1,1,1,checkMAGSensorCR_ON,,BDP,200,5
+?DX6,判断尘盒磁传感器是否触发,1,1,1,checkDustBMAGSensor_ON,,BDP,200,5
+?DV0,检测左前Dock IR Sensor(IR Sensors ON for docking@Front Left),1,5000,1,checkFrontLDockIRSesor,,BDP,200,5
+?DV1,检测右前Dock IR Sensor(IR Sensors ON for docking@Front Right),1,5000,1,checkFrontRDockIRSesor,,BDP,200,5
+?DV2,检测左中Dock IR Sensor(IR Sensors ON for docking@Middle Left),1,5000,1,checkMiddleLDockIRSesor,,BDP,200,5
+?DV3,检测右中Dock IR Sensor(IR Sensors ON for docking@Middle Right),1,5000,1,checkMiddleRDockIRSesor,,BDP,200,5
+?DV4,检测左后Dock IR Sensor(IR Sensors ON for docking@Back Left),1,5000,1,checkBackLDockIRSesor,,BDP,200,5
+?DV5,检测右后Dock IR Sensor(IR Sensors ON for docking@Back Right),1,5000,1,checkBackRDockIRSesor,,BDP,200,5
+?DV6,后对位接收IR 右（顶盖）,1,5000,1,checkCBackLDockIRSesor,,BDP,200,5
+?DV7,后对位接收IR 左（顶盖）,1,5000,1,checkCBackRDockIRSesor,,BDP,200,5
+?NE0,Acc function checking,1,1,1,checkIMUstate,,BDP,200,5
+?NE0,Acc x_value checking,0,50,1,checkIMUAccxValue,,BDP,200,5
+?NE0,Acc y_value checking,0,50,1,checkIMUAccyValue,,BDP,200,5
+?NE0,Acc z_value checking,0,50,1,checkIMUAcczValue,,BDP,200,5
+?NE0,Gyro function Checking,0,50,1,checkIMUtemValue,,BDP,200,5
+?NE0,Gyro x_value Checking,0,50,1,checkIMUGyroxValue,,BDP,200,5
+?NE0,Gyro y_value Checking,0,50,1,checkIMUGyroyValue,,BDP,200,5
+?NE0,Gyro z_value Checking,0,50,1,checkIMUGyrozValue,,BDP,200,5
+?DW1,检测右轮是否抬起,0,0,1,checkRWheelNotDown,,BDP,200,5
+?DW0,检测左轮是否抬起,0,0,1,checkLWheelNotDown,,BDP,200,5
+?DT0,检测left bumper是否触发,1,1,1,checkLBumper_ON,,BDP,200,5
+?DT1,检测right bumper是否触发,1,1,1,checkRBumper_ON,,BDP,200,5
+?DT2,检测TopLeft bumper是否触发,1,1,1,checkTopLBumper_ON,,BDP,200,5
+?DT3,检测TopRight bumper是否触发,1,1,1,checkTopRBumper_ON,,BDP,200,5
+?DT8,检测TopCenter Middle bumper是否触发,1,1,1,checkTopCMiddleBumper_ON,,BDP,200,3
+*DY1,激活蜂鸣器开启,,,1,TurnBuzzer_ON,,BDP,200,3
+?DY,检测蜂鸣器状态,1,1,0,checkBuzzerState,,BDP,200,50
+*DY0,激活蜂鸣器停止,,,1,TurnBuzzer_OFF,,BDP,200,2
+?WW,读取PCBA 二维码信息,31,31,1,checkPcbaBarcode,,BDP,200,5
+?WS,检测PCBA版本信息长度,28,28,1,checkNavPcbaBarcode,,BDP,200,5
+?WH,检测bootloader版本,1.13,1.13,1,checkNavBootloader_Ver,,BDP,200,5
+?NH,导航板状态,1,1,1,checkNavHealthState,,BDP,200,5
+?PE,Product SW Build Information,27,27,0,checkProSoftBuildInf,,BDP,200,5
+?NG,检测光流连接Optical sensor connection,1,1,0,checkOFSconnect,,BDP,200,5
+?NL0,Optical Flow sensor LED and Laster OFF_average,0,180,0,checkFandLoff_average,,BDP,200,5
+?NL0,Optical Flow sensor LED and Laster OFF_quality,10,2000,0,checkFandLoff_quality,,BDP,200,5
+*NC00,set Optical Flow Right sensor Light Source laser,,,0,setROFS_laser,,BDP,200,3
+?NC0,check Optical Flow Right sensor Light Source ,0,0,0,checkROFSlightSour,,BDP,200,5
+?NL1,Optical Flow sensor LED Off and Laster  ON_average,10,200,0,checkFOffLOn_average,,BDP,200,5
+?NL1,Optical Flow sensor LED Off and Laster ON_quality,50,2000,0,checkFOffLOn_quality,,BDP,200,5
+*NC01,set Optical Flow Right sensor Light Source LED,,,0,setROFS_LED,,BDP,200,3
+?NC0,check Optical Flow Right sensor Light Source ,1,1,0,checkROFSlightSour_2,,BDP,200,5
+?NL2,Optical Flow sensor LED ON and Laster Off_average,10,200,0,checkFOnLOff_average,,BDP,200,5
+?NL2,Optical Flow sensor LED ON and Laster Off_quality,50,2000,0,checkFOnLOff_quality,,BDP,200,5
+*NC01,set Optical Flow Right sensor Light Source laser,,,0,setROFS_LED_2,,BDP,200,3
+?NC0,check Optical Flow Right sensor Light Source ,1,1,0,checkROFSlightSour_3,,BDP,200,5
+?NJ,检测IQ Optical sensor power,50,2000,0,checkIQOFSPower,,BDP,200,5
+?NS,摄像头功能测试Camera Function checking,1111,1111,1,checkCamFun,,BDP,200,5
+?CS,Camera PCBA SN,8,8,1,checkCamSN,,BDP,200,5
+?CS,Camera PCBA tpye,UG,UG,1,checkCamType,,BDP,200,5
+?WZ,SoftwareVersion,0.0.8,0.0.8,1,checkmcuVersion,,BDP,200,5
+?PD,查询PCBA硬件信息Check PCBA Hardware build Info,0,0,0,checkPcbaHWInfo,,BDP,200,5
+?PH,查询PCBA软件信息Check PCBA Hardware build Info,0,0,0,checkPcbaFWInfo,,BDP,200,5
+PD=PH,判断PD=PH Validate PD=PH,1,1,0,validatePD_PH,,zp50,200,5
+?WN,检测导航板APP版本,6.6.15,6.6.15,1,checkNavAppVersion,,BDP,200,5
+?WI,检测WiFi SCM 版本信息（比对版本）,2.3.56,2.3.56,1,checkWifiVersion,,BDP,200,10
+?WT,查询 WiFi SSID 状态,1,1,1,checkWifiSSIDScanState,,BDP,200,5
+?WY,查询WiFi SSID ,12,12,1,deviceMacAddress,,BDP,200,5
+?WJ,查询robot Macaddress,12,12,0,robotMacAddress,,BDP,200,5
+?WM,HWD自检,32,32,1,checkHWD_self,,BDP,200,5
+*WG02,写入BDP测试标志,,,1,setBDPTestPass,,BDP,200,3
+?WG0,检测BDP测试标志,2,2,1,checkBDPTestState,,BDP,200,5
+*DS0,退出测试模式,,,1,setTestMode_OFF,,BDP,200,3
+?DS,确认退出测试模式,0,0,1,checkTestMode_OFF,,BDP,200,5

@@ -1,0 +1,36 @@
+﻿1,,lower,upper,isFlag,uniqueCode,,Type,tryPerio,tryTimes
+*DS1,进入校准模式,1,1,1,setTestMode_ON,,BDP,200,3
+?DS,检测当前模式,,,,checkTestMode_ON,,BDP,200,3
+?WX,读取10位机型信息SKU （判断长度）,28,28,1,checkQRCode_cal,,BDP,200,6
+?WD,检查MCU的WD指令,,,1,,,BDP,200,3
+?WG0,检查测试标志WG0,2,2,,,,BDP,200,3
+?WG2,检查测试标志WG2,2,2,1,,,BDP,200,3
+*NC00,将OFS光源设置为Laser,,,0,,,BDP,200,3
+?NC0,,0,0,,,,BDP,200,3
+*ND0,设置机器在校准状态0,,,0,,,BDP,200,3
+?ND,,0,0,,,,BDP,200,3
+OFS1,移动机器到地板40cm处,,,0,,,OFS,200,3
+*ND1,设置机器在校准状态1,,,0,,,BDP,200,3
+?ND,,1,1,,,,BDP,200,3
+OFS2,移动机器6厘米,,,0,,,OFS,200,3
+*NC01,将OFS光源设置为LED,,,0,,,BDP,200,3
+?NC0,,1,1,,,,BDP,200,3
+*ND2,设置机器在校准状态2,,,0,,,BDP,200,3
+?ND,,2,2,,,,BDP,200,3
+OFS3,移动机器到地毯40cm处,,,0,,,OFS,200,3
+*ND3,设置机器在校准状态3,,,0,,,BDP,200,3
+?ND,,3,3,,,,BDP,200,3
+delay,延时等待,1,,0,,,SPE,200,3
+*DS1,进入测试模式Enter Debug Mode,,,0,,,BDP,200,3
+?DS,,1,1,,,,BDP,200,3
+?WG5,检查测试标志,2,2,0,,,BDP,200,3
+?WW,检查主板信息,,,0,,,BDP,200,3
+?NA00,读取Scale at Floor- LD,1.15,1.23,0,,,BDP,200,3
+?NA01,(unit : degree) at floor- LD,-3.3,3.3,0,,,BDP,200,3
+?NA04,读取Scale at  Carpet- LED,1.16,1.32,0,,,BDP,200,3
+?NA05,(unit : degree) at Carpet- LED,-3.3,3.3,,,,BDP,200,3
+?WM,HWD自检,32,32,2,checkHWD_self,,BDP,200,5
+*WG52,写入OFS成功标志1,2,2,1,setOFSPass,,BDP,200,3
+?WG5,检测OFS成功标志1,2,2,1,checkOFSState,,BDP,200,10
+*DS0,退出测试模式,,,1,setTestMode_OFF,,BDP,200,3
+?DS,确认退出测试模式,0,0,1,checkTestMode_OFF,,BDP,200,10
