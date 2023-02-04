@@ -1,10 +1,10 @@
 #!/bin/bash
-#======================================
-# File name:_09case语句.sh
-# Author:liangliangSu
-# Email:sll917@hotmail.com
-# Date of writing:2022-10-06 19:52
-#======================================
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-02-04 16:04
+# * Filename : 09case语句.sh
+# **********************************************************
 : '
 case ... esac 与其他语言中的 switch ... case 语句类似，是一种多分枝选择结构。
 case 语句匹配一个值或一个模式，如果匹配成功，执行相匹配的命令。case 语句格式如下：
@@ -38,16 +38,21 @@ echo 'Input a number between 1 to 4'
 echo 'Your number is:\c'
 read aNum
 case $aNum in
-1) echo 'You select 1'
-;;
-2) echo 'You select 2'
-;;
-3) echo 'You select 3'
-;;
-4) echo 'You select 4'
-;;
-*) echo 'You do not select a number between 1 to 4'
-;;
+1)
+	echo 'You select 1'
+	;;
+2)
+	echo 'You select 2'
+	;;
+3)
+	echo 'You select 3'
+	;;
+4)
+	echo 'You select 4'
+	;;
+*)
+	echo 'You do not select a number between 1 to 4'
+	;;
 esac
 #输入不同的内容，会有不同的结果，例如：
 #Input a number between 1 to 4
@@ -57,16 +62,18 @@ esac
 #!/bin/bash
 option="${1}"
 case ${option} in
--f) FILE="${2}"
-echo "File name is $FILE"
-;;
--d) DIR="${2}"
-echo "Dir name is $DIR"
-;;
+-f)
+	FILE="${2}"
+	echo "File name is $FILE"
+	;;
+-d)
+	DIR="${2}"
+	echo "Dir name is $DIR"
+	;;
 *)
-echo "`basename ${0}`:usage: [-f file] | [-d directory]"
-exit 1 # Command to come out of the program with status 1
-;;
+	echo "$(basename ${0}):usage: [-f file] | [-d directory]"
+	exit 1 # Command to come out of the program with status 1
+	;;
 esac
 #运行结果：
 #$./test.sh
@@ -78,3 +85,38 @@ esac
 #$ ./test.sh -d unix
 #Dir name is unix
 #$
+
+read -p "请输入你要查询的城市房价排名名次:" number
+case $number in
+1)
+	echo "2021年全国城市房价排行第1是:深圳  "
+	;;
+2)
+	echo "2021年全国城市房价排行第2是:北京  "
+	;;
+3)
+	echo "2021年全国城市房价排行第3是:上海  "
+	;;
+4)
+	echo "2021年全国城市房价排行第4是:广州  "
+	;;
+5)
+	echo "2021年全国城市房价排行第5是:杭州  "
+	;;
+6)
+	echo "2021年全国城市房价排行第6是:三亚  "
+	;;
+7)
+	echo "2021年全国城市房价排行第7是:南京  "
+	;;
+8)
+	echo "2021年全国城市房价排行第8是:天津  "
+	;;
+9)
+	echo "2021年全国城市房价排行第9是:珠海  "
+	;;
+*)
+	echo "2021年全国城市房价排行第10是:东莞 "
+	;;
+esac
+

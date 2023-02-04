@@ -1,10 +1,10 @@
 #!/bin/bash
-#======================================
-# File name:shell_01if_else语句.sh
-# Author:liangliangSu
-# Email:sll917@hotmail.com
-# Date of writing:2022-10-06 15:55
-#======================================
+# **********************************************************
+# * Author : liangliangSu
+# * Email : sll917@hotmail.com
+# * Create time : 2023-02-04 16:08
+# * Filename : 01if_else语句.sh
+# **********************************************************
 : '
 if 语句通过关系运算符判断表达式的真假来决定执行哪个分支,Shell 有三种 if ... else语句：
 - if ... fi 语句；
@@ -25,7 +25,6 @@ fi
 '
 #举个例子：
 echo '(1) -----------------------------------------------------------'
-#!/bin/sh
 a=10
 b=20
 if [ $a == $b ]; then
@@ -50,7 +49,6 @@ fi
 '
 echo '(2) -----------------------------------------------------------'
 #举个例子：
-#!/bin/sh
 a=10
 b=20
 if [ $a == $b ]; then
@@ -62,8 +60,8 @@ fi
 #a is not equal to b
 
 : '
-3) if ... elif ... fi 语句
-if ... elif ... fi 语句可以对多个条件进行判断，语法为：
+3) if ... elif ... else ... fi 语句
+if ... elif ... else ... fi 语句可以对多个条件进行判断，语法为：
 if [ expression 1 ]
 then
     Statement(s) to be executed if expression 1 is true
@@ -80,7 +78,6 @@ fi
 #哪一个 expression 的值为 true，就执行哪个 expression 后面的语句；如果都为 false，那么不执行任何语句。
 echo '(3) -----------------------------------------------------------'
 #举个例子：
-#!/bin/sh
 a=10
 b=20
 if [ $a == $b ]; then

@@ -24,5 +24,3 @@ stty echo
 pass=${pass:-123456}
 useradd "$user"
 echo "$pass" | passwd --stdin "$user"
-
-
