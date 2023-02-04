@@ -20,6 +20,24 @@ myNum=100
 echo "myUrl"
 echo "myNum"
 
+#只读变量
+#使用 readonly 命令可以将变量定义为只读变量，只读变量的值不能被改变。
+#下面的例子尝试更改只读变量，结果报错：
+myUrl="http://see.xidian.edu.cn/cpp/shell/"
+readonly myUrl
+myUrl="http://see.xidian.edu.cn/cpp/danpianji/"
+echo "(0)------------------------------------------------------------"
+
+#删除变量
+#使用 unset 命令可以删除变量。语法：
+#unset variable_name
+#变量被删除后不能再次使用；unset 命令不能删除只读变量。
+#举个例子：
+myUrl="http://see.xidian.edu.cn/cpp/u/xitong/"
+unset myUrl
+echo $myUrl
+echo "(1)------------------------------------------------------------"
+
 #使用变量
 #使用一个定义过的变量，只要在变量名前面加美元符号（$）即可，如：
 your_name="liangliangSu"
@@ -59,3 +77,21 @@ echo "$ng1 def"
 # abc def
 echo '$ng1 def'
 # $ng1 def
+
+#变量类型
+#运行 shell 时，会同时存在三种变量： 
+#1) 局部变量
+#局部变量在脚本或命令中定义，仅在当前 shell 实例中有效，其他 shell 启动的程序不能访问局部变量。
+
+#2) 环境变量
+#所有的程序，包括 shell 启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。必要的时候 shell 脚本也可以定义环境变量。
+#可以通过env获取系统的全部系统变量
+
+#3) shell 变量
+#shell 变量是由 shell 程序设置的特殊变量。shell 变量中有一部分是环境变量，有一部分是局部变量，这些变量
+#保证了 shell 的正常运行
+
+#3-1) 位置参数边变量
+#向脚本中进行参数传递，变量名不能自定义，变量作用是固定的
+#3-2) 特殊参数变量
+#是bash中已经定义好的变量，变量不能自定义，变量作用也是固定i的
