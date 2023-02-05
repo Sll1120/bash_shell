@@ -48,7 +48,7 @@ top -bn1 | grep load | awk "{printf "%.2f%%\t\t\n", $(NF-2)}"
 #CPU=$(top -bn1 | grep load | awk '{printf "%.2f%%\t\t\n", $(NF-2)}')
 #我们希望脚本运行一段时间，比如说一个小时。为了做到这一点，我们需要使用“while do”循环，每次循环后延迟 x 秒：
 #end=$((SECONDS+3600))
-#while [ $SECONDS -lt $end ] 
+#while [ $SECONDS -lt $end ]
 #do
 #    echo "$MEMORY$DISK$CPU"
 #    sleep 5
@@ -59,11 +59,12 @@ top -bn1 | grep load | awk "{printf "%.2f%%\t\t\n", $(NF-2)}"
 #完整代码如下：
 #!/bin/bash
 printf "Memory\t\tDisk\t\tCPU\n"
-end=$((SECONDS+3600))
+end=$((SECONDS + 3600))
 while [ $SECONDS -lt $end ]; do
-MEMORY=$(free -m | awk 'NR==2{printf "%.2f%%\t\t", $3*100/$2 }')
-DISK=$(df -h | awk '$NF=="/"{printf "%s\t\t", $5}')
-CPU=$(top -bn1 | grep load | awk '{printf "%.2f%%\t\t\n", $(NF-2)}')
-echo "$MEMORY$DISK$CPU"
-sleep 3
+	MEMORY=$(free -m | awk 'NR==2{printf "%.2f%%\t\t", $3*100/$2 }')
+	DISK=$(df -h | awk '$NF=="/"{printf "%s\t\t", $5}')
+	CPU=$(top -bn1 | grep load | awk '{printf "%.2f%%\t\t\n", $(NF-2)}')
+	echo "$MEMORY$DISK$CPU"
+	sleep 3
 done
+

@@ -3,7 +3,7 @@
 # * Author : liangliangSu
 # * Email : sll917@hotmail.com
 # * Create time : 2023-01-01 11:56
-# * Filename : 36从shell脚本发送邮件.sh
+# * Filename : 从脚本发送邮件.sh
 # **********************************************************
 #收件箱
 EMAIL_RECIVER="sll917@outlook.com"
@@ -17,7 +17,7 @@ EMAIL_USERNAME="sll917"
 EMAIL_PASSWORD=kyajdhtjeasubiha
 
 #附件路径
-FILE1_PATH="/home/sll/git/shell/a17_common_script/z_editors.txt"
+FILE1_PATH="/home/sll/git/shell/a01_common_script/mail.txt"
 
 #smtp服务器地址
 EMAIL_SMTPHOST=smtp.qq.com

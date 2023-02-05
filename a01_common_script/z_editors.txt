@@ -1,5 +1,0 @@
- Vim
- Emacs
- ed
- nano
- Code

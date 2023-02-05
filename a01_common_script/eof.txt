@@ -54,8 +54,3 @@ dinc
 dank
 yank
 12
-sl
-dinc
-dank
-yank
-
