@@ -185,7 +185,7 @@ array4=(1 2 3 4 "hello world" [10]=linux)
 
 echo '(9)-----------------------完美分割线--------------------------------'
 #读取数组：
-echo ${array[i]}  #i表示元素的下标
+#echo ${array[i]}  #i表示元素的下标
 #使用@ 或 * 可以获取数组中的所有元素：
 #获取第一个元素
 
@@ -195,6 +195,7 @@ echo ${#array[*]}       # 获取数组里所有元素个数
 echo ${!array[@]}       # 获取数组元素的索引下标
 echo ${array[@]:1:2}    # 访问指定的元素；1代表从下标为1的元素开始获取；2代表获取后面几个元素
 
+echo '(10)-----------------------完美分割线--------------------------------'
 array[0]=var1
 array[1]=var2
 array[2]=var3
@@ -204,188 +205,159 @@ array2=(`ls ./`)
 array3=(jack harry "Miss Hou" [5]=tom)
 
 #查看普通数组信息：
-#[root@server shell01]# declare -a
-#declare -a array='([0]="var1" [1]="var2" [2]="var3")'
-#declare -a array1='([0]="uu1" [1]="uu2" [2]="uu3" [3]="uu4")'
-#declare -a array2='([0]="1.sh" [1]="2.sh" [2]="3.sh" [3]="4.sh" [4]="passwd")'
-#declare -a array3='([0]="jack" [1]="harry" [2]="Miss Hou" [5]="tom")'
-#[root@server shell01]# 
-#[root@server shell01]# 
-#[root@server shell01]# echo ${array[*]}
-#var1 var2 var3
-#[root@server shell01]# echo ${array[@]}
-#var1 var2 var3
-#[root@server shell01]# echo ${array[2]}
-#var3
-#[root@server shell01]# echo ${array2[@]}
-#1.sh 2.sh 3.sh 4.sh passwd
-#[root@server shell01]# echo ${array2[3]}
-#4.sh
-#[root@server shell01]# 
-#[root@server shell01]# echo ${array2[*]:2:2}
-#3.sh 4.sh
-#[root@server shell01]# echo ${#array2[*]}
-#5
-#[root@server shell01]# echo ${!array2[*]}
-#0 1 2 3 4
-#[root@server shell01]# echo ${!array3[*]}
-#0 1 2 5
-#
-#
+echo '(11)-----------------------完美分割线--------------------------------'
+declare -a
+echo ${array[*]}
+echo ${array[@]}
+echo ${array[2]}
+echo ${array2[@]}
+echo ${array2[3]}
+echo ${array2[*]:2:2}
+echo ${#array2[*]}
+echo ${!array2[*]}
+echo ${!array3[*]}
+
 #关联数组定义：
+
 #首先声明关联数组
-#declare -A asso_array1
-#declare -A asso_array2
-#declare -A asso_array3
-#
+echo '(12)-----------------------完美分割线--------------------------------'
+declare -A asso_array1
+declare -A asso_array2
+declare -A asso_array3
+
 #数组赋值：
 #一次赋一个值：
 #数组名[索引|下标]=变量值
-#[root@server ~]# asso_array1[linux]=one
-#[root@server ~]# asso_array1[java]=two
-#[root@server ~]# asso_array1[php]=three
+asso_array1[linux]=one
+asso_array1[java]=two
+asso_array1[php]=three
+
 #一次赋多个值：
-#[root@server ~]# asso_array2=([name1]=harry [name2]=jack [name3]=amy [name4]="Miss Hou")
+asso_array2=([name1]=harry [name2]=jack [name3]=amy [name4]="Miss Hou")
 #查看关联数组：
-#[root@server ~]# declare -A
-#declare -A asso_array1='([php]="three" [java]="two" [linux]="one" )'
-#declare -A asso_array2='([name3]="amy" [name2]="jack" [name1]="harry" [name4]="Miss Hou" )'
-#
-#[root@server ~]# echo ${asso_array1[linux]}
-#one
-#[root@server ~]# echo ${asso_array1[php]}
-#three
-#[root@server ~]# echo ${asso_array1[*]}
-#three two one
-#[root@server ~]# echo ${!asso_array1[*]}
-#php java linux
-#[root@server ~]# echo ${#asso_array1[*]}
-#3
-#[root@server ~]# echo ${#asso_array2[*]}
-#4
-#[root@server ~]# echo ${!asso_array2[*]}
-#name3 name2 name1 name4
-#
-#
+echo '(13)-----------------------完美分割线--------------------------------'
+declare -A
+declare -A asso_array1='([php]="three" [java]="two" [linux]="one" )'
+declare -A asso_array2='([name3]="amy" [name2]="jack" [name1]="harry" [name4]="Miss Hou" )'
+
+echo ${asso_array1[linux]}
+echo ${asso_array1[php]}
+echo ${asso_array1[*]}
+echo ${!asso_array1[*]}
+echo ${#asso_array1[*]}
+echo ${#asso_array2[*]}
+echo ${!asso_array2[*]}
+
 #9. 交互式定义变量的值 read    主要用于让用户去定义变量值
-#-p 提示信息
-#-n 字符数 （限制变量值的字符数）
-#-s 不显示   
-#-t 超时（默认单位秒）（限制用户输入变量值的超时时间）
-#
-#[root@MissHou shell01]# cat 1.txt 
-#10.1.1.1 255.255.255.0
-#
-#[root@MissHou shell01]# read -p "Input your IP and Netmask:" ip mask < 1.txt 
-#[root@MissHou shell01]# echo $ip
-#10.1.1.1
-#[root@MissHou shell01]# echo $mask
-#255.255.255.0
-#
-#
+: '
+-p 提示信息
+-n 字符数 （限制变量值的字符数）
+-s 不显示   
+-t 超时（默认单位秒）（限制用户输入变量值的超时时间）
+'
+echo '(14)-----------------------完美分割线--------------------------------'
+cat array.txt 
+
+read -p "Input your IP and Netmask:" ip mask < array.txt 
+echo $ip
+echo $mask
+
 #10. 其他变量（扩展）
-#1）取出一个目录下的目录和文件：dirname和 basename 
-#2）变量"内容"的删除和替换
-#一个“%”代表从右往左去掉一个/key/
-#两个“%%”代表从右往左最大去掉/key/
-#一个“#”代表从左往右去掉一个/key/
-#两个“##”代表从左往右最大去掉/key/
-#
-## A=/root/Desktop/shell/mem.txt 
-## echo $A
-#/root/Desktop/shell/mem.txt
-## dirname $A   取出目录
-#/root/Desktop/shell
-## basename $A  取出文件
-#mem.txt
-#
-## url=www.taobao.com
-## echo ${#url}             获取变量的长度
-## echo ${url#*.}
-## echo ${url##*.}
-## echo ${url%.*}
-## echo ${url%%.*}
-#
-#++++++++++++++++++++++++++++++++++++++++++++++++++
-#以下内容自己完成：
+: '
+1）取出一个目录下的目录和文件：dirname和 basename 
+2）变量"内容"的删除和替换
+一个“%”代表从右往左去掉一个/key/
+两个“%%”代表从右往左最大去掉/key/
+一个“#”代表从左往右去掉一个/key/
+两个“##”代表从左往右最大去掉/key/
+'
+
+echo '(15)-----------------------完美分割线--------------------------------'
+A=/home/sll/git/shell/a18_shell编写工具及法则详解/array.txt 
+echo $A
+dirname $A   #取出目录
+basename $A  #取出文件
+
+echo '(16)-----------------------完美分割线--------------------------------'
+url=www.taobao.com
+echo ${#url}             #获取变量的长度
+echo ${url#*.}
+echo ${url##*.}
+echo ${url%.*}
+echo ${url%%.*}
 #替换：/ 和 //
-# 1015  echo ${url/ao/AO}
-# 1017  echo ${url//ao/AO}   贪婪替换
-#
+echo ${url/ao/AO}
+echo ${url//ao/AO}   #贪婪替换
 #替代： - 和 :-  +和:+
-# 1019  echo ${abc-123}
-# 1020  abc=hello
-# 1021  echo ${abc-444}
-# 1022  echo $abc
-# 1024  abc=
-# 1025  echo ${abc-222}
-#
+
+echo '(17)-----------------------完美分割线--------------------------------'
+echo ${abc-123}
+abc=hello
+echo ${abc-444}
+echo $abc
+abc=
+echo ${abc-222}
 #${变量名-新的变量值} 或者 ${变量名=新的变量值}
 #变量没有被赋值：会使用“新的变量值“ 替代
 #变量有被赋值（包括空值）： 不会被替代
-#
-# 1062  echo ${ABC:-123}
-# 1063  ABC=HELLO
-# 1064  echo ${ABC:-123}
-# 1065  ABC=
-# 1066  echo ${ABC:-123}
-#
+
+echo '(18)-----------------------完美分割线--------------------------------'
+echo ${ABC:-123}
+ABC=HELLO
+echo ${ABC:-123}
+ABC=
+echo ${ABC:-123}
 #${变量名:-新的变量值} 或者 ${变量名:=新的变量值}
 #变量没有被赋值或者赋空值：会使用“新的变量值“ 替代
 #变量有被赋值： 不会被替代
-#
-# 1116  echo ${abc=123}
-# 1118  echo ${abc:=123}
-#
-#[root@server ~]# unset abc
-#[root@server ~]# echo ${abc:+123}
-#
-#[root@server ~]# abc=hello
-#[root@server ~]# echo ${abc:+123}
-#123
-#[root@server ~]# abc=
-#[root@server ~]# echo ${abc:+123}
-#
-#${变量名+新的变量值}
-#变量没有被赋值或者赋空值：不会使用“新的变量值“ 替代
-#变量有被赋值： 会被替代
-#[root@server ~]# unset abc
-#[root@server ~]# echo ${abc+123}
-#
-#[root@server ~]# abc=hello
-#[root@server ~]# echo ${abc+123}
-#123
-#[root@server ~]# abc=
-#[root@server ~]# echo ${abc+123}
-#123
+
+echo '(19)-----------------------完美分割线--------------------------------'
+echo ${abc=123}
+echo ${abc:=123}
+
+unset abc
+echo ${abc:+123}
+
+abc=hello
+echo ${abc:+123}
+abc=
+echo ${abc:+123}
 #${变量名:+新的变量值}
 #变量没有被赋值：不会使用“新的变量值“ 替代
 #变量有被赋值（包括空值）： 会被替代
-#
-#[root@server ~]# unset abc
-#[root@server ~]# echo ${abc?123}
-#-bash: abc: 123
-#
-#[root@server ~]# abc=hello
-#[root@server ~]# echo ${abc?123}
-#hello
-#[root@server ~]# abc=
-#[root@server ~]# echo ${abc?123}
-#
+
+echo '(20)-----------------------完美分割线--------------------------------'
+unset abc
+echo ${abc+123}
+
+abc=hello
+echo ${abc+123}
+
+abc=
+echo ${abc+123}
+#${变量名+新的变量值}
+#变量没有被赋值或者赋空值：不会使用“新的变量值“ 替代
+#变量有被赋值： 会被替代
+
+echo '(21)-----------------------完美分割线--------------------------------'
+unset abc
+echo ${abc?123}
+
+abc=hello
+echo ${abc?123}
+abc=
+echo ${abc?123}
 #${变量名?新的变量值}
 #变量没有被赋值:提示错误信息
 #变量被赋值（包括空值）：不会使用“新的变量值“ 替代
-#
-#[root@server ~]# unset abc
-#[root@server ~]# echo ${abc:?123}
-#-bash: abc: 123
-#[root@server ~]# abc=hello
-#[root@server ~]# echo ${abc:?123}
-#hello
-#[root@server ~]# abc=
-#[root@server ~]# echo ${abc:?123}
-#-bash: abc: 123
 
+echo '(22)-----------------------完美分割线--------------------------------'
+unset abc
+echo ${abc:?123}
+abc=hello
+echo ${abc:?123}
+abc=
+echo ${abc:?123}
 #${变量名:?新的变量值}
 #变量没有被赋值或者赋空值时:提示错误信息
 #变量被赋值：不会使用“新的变量值“ 替代
