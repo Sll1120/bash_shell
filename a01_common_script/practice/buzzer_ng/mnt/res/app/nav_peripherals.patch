@@ -1,3 +1,0 @@
-##3308 Peripherals device configuration
-imu_device = /dev/spidev0.0
-lidar_pwm_num = 1
