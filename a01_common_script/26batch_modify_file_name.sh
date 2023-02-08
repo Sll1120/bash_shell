@@ -42,6 +42,13 @@ ls -l *.html
 sleep 5
 rm *.html
 
+#批量修改后缀名
+#dir=$1 
+#for file in `ls $1/*`
+#do 
+#	mv $file $file.UP
+#done
+
 #方法3：
 # rename article bbs *.html
 
@@ -71,4 +78,3 @@ sed -n '6,10'p sed_eg.txt | sed s'/[a-zA-Z]//'g
 sed -n '11,$'p sed_eg.txt
 #最终结果只是在屏幕上打印结果，如果想直接更改文件，可将输出结果写入临时文件中，
 #再替换sed_eg.txt或者使用-i选项
-

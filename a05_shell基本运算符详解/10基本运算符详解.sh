@@ -41,6 +41,7 @@ echo "两数之和为 : $val"
 注意：条件表达式要放在方括号之间，并且要有空格，例如: [$a==$b] 是错误的，必须写成 [ $a == $b ]
 '
 #实例：
+echo '(2)-----------------------完美分割线--------------------------------'
 #!/bin/bash
 a=10
 b=20
@@ -100,14 +101,16 @@ fi
 ||	逻辑的OR	[[ $a -lt 100 || $b -gt 100 ]]	返true
 '
 
-#5,字符串运算符
-#下表列出了常用的字符串运算符，假定变量 a 为 "abc"，变量 b 为 "efg"
+: '
+5,字符串运算符
+下表列出了常用的字符串运算符，假定变量 a 为 "abc"，变量 b 为 "efg"
 运算符		说明						例子
 =		检测两个字符串是否相等，相等返回true。		[ $a = $b ] 返回 false
 !=		检测两个字符串是否相等，不相等返回true。	[ $a != $b ] 返回 true
 -z		检测字符串长度是否为0，为0返回true。		[ -z $a ] 返回 false
 -n		检测字符串长度是否不为0，不为0返回true。	[ -n "$a" ] 返回 true
 $		检测字符串是否为空，不为空返回true。		[ $a ] 返回 true
+'
 
 #6,文件测试运算符
 #文件测试运算符用于检测Unix文件的各种属性。
@@ -117,66 +120,66 @@ $		检测字符串是否为空，不为空返回true。		[ $a ] 返回 true
 -b file    检测文件是否是块设备文件，如果是，则返回true      	   [ -b $file ] 返回 false
 -c file    检测文件是否是字符设备文件，如果是，则返回true    	   [ -c $file ] 返回 false
 -d file    检测文件是否是目录，如果是，则返回true	     	   [ -d $file ] 返回 false
--f file    检测文件是否是普通文件，如果是，则返回true	  	   [ -f $file ] 返回 false
+-f file    检测文件是否是普通文件，如果是，则返回true	  	   [ -f $file ] 返回 true 
 -g file    检测文件是否设置了SGID位，如果是，则返口true  	   [ -g $file ] 返回 false
 -k file    检测文件是否设置了粘着位(StickyBit)，如果是，则返回true [ -k $file ] 返回 false
--p file    检测文件是否是有名管道，如果是，则返回true		   [ -b $file ] 返回 false
--u file    检测文件是否设置了SUID位，如果是，则返回true		   [ -b $file ] 返回 false
--r file    检测文件是否可读，如果是，则返回true			   [ -b $file ] 返回 false
--w file    检测文件是否可写，如果是，则返回true			   [ -b $file ] 返回 false
--x file    检测文件是否可执行，如果是，则返回true		   [ -b $file ] 返回 false
--s file    检测文件是否为空(文件大小是否大于0)，不为空返回true     [ -b $file ] 返回 false
--e file    检测文件(包括目录)是否存在，如果是，则返回true   	   [ -b $file ] 返回 false
+-p file    检测文件是否是有名管道，如果是，则返回true		   [ -p $file ] 返回 false
+-u file    检测文件是否设置了SUID位，如果是，则返回true		   [ -u $file ] 返回 false
+-r file    检测文件是否可读，如果是，则返回true			   [ -r $file ] 返回 true
+-w file    检测文件是否可写，如果是，则返回true			   [ -w $file ] 返回 true
+-x file    检测文件是否可执行，如果是，则返回true		   [ -x $file ] 返回 true
+-s file    检测文件是否为空(文件大小是否大于0)，不为空返回true     [ -s $file ] 返回 true
+-e file    检测文件(包括目录)是否存在，如果是，则返回true   	   [ -e $file ] 返回 true
 !
 #其他检查符：
 #-S:判断某文件是否socket。
 #-L:检测文件是否存在并且是一个符号链接。
 
 #实例
-#变量 file 表示文件 /var/www/runoob/test.sh，它的大小为 100 字节，具有 rwx 权限。下面的代码，将检测该文件的各种属性：
-#
-##!/bin/bash
-#
-#file="/var/www/runoob/test.sh"
-#if [ -r $file ]
-#then
-#   echo "文件可读"
-#else
-#   echo "文件不可读"
-#fi
-#if [ -w $file ]
-#then
-#   echo "文件可写"
-#else
-#   echo "文件不可写"
-#fi
-#if [ -x $file ]
-#then
-#   echo "文件可执行"
-#else
-#   echo "文件不可执行"
-#fi
-#if [ -f $file ]
-#then
-#   echo "文件为普通文件"
-#else
-#   echo "文件为特殊文件"
-#fi
-#if [ -d $file ]
-#then
-#   echo "文件是个目录"
-#else
-#   echo "文件不是个目录"
-#fi
-#if [ -s $file ]
-#then
-#   echo "文件不为空"
-#else
-#   echo "文件为空"
-#fi
-#if [ -e $file ]
-#then
-#   echo "文件存在"
-#else
-#   echo "文件不存在"
-#fi
+#变量 file 表示文件 /home/sll/gitee/shell/a05_shell基本运算符详解 它的大小为 100 字节，具有 rwx 权限。下面的代码，将检测该文件的各种属性：
+
+echo '(3)-----------------------完美分割线--------------------------------'
+#!/bin/bash
+file="/home/sll/gitee/shell/a05_shell基本运算符详解/10基本运算符详解.sh"
+if [ -r $file ]
+then
+   echo "文件可读"
+else
+   echo "文件不可读"
+fi
+if [ -w $file ]
+then
+   echo "文件可写"
+else
+   echo "文件不可写"
+fi
+if [ -x $file ]
+then
+   echo "文件可执行"
+else
+   echo "文件不可执行"
+fi
+if [ -f $file ]
+then
+   echo "文件为普通文件"
+else
+   echo "文件为特殊文件"
+fi
+if [ -d $file ]
+then
+   echo "文件是个目录"
+else
+   echo "文件不是个目录"
+fi
+if [ -s $file ]
+then
+   echo "文件不为空"
+else
+   echo "文件为空"
+fi
+if [ -e $file ]
+then
+   echo "文件存在"
+else
+   echo "文件不存在"
+fi
