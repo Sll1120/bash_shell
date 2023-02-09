@@ -8,7 +8,9 @@
 # CAL修改如下:
 read -p '请输入你第一个需要被替换的字符串：' str1
 read -p '请输入你第一个需要替换后的字符串：' str11
-sed -i "s/$str1/$str11/g" `grep "$str1" -rl */CAL/*.csv`
+#sed -i "s/$str1/$str11/g" `grep "$str1" -rl ./*/CAL/*.csv`
+sed -i "s/$str1/$str11/g" `awk '/^?WZ/' ./*/CAL/*.csv | grep "$str1"`
+
 read -p '请输入你第二个需要被替换的字符串：' str2
 read -p '请输入你第二个需要替换后的字符串：' str22
 sed -i "s/$str2/$str22/g" `grep "$str2" -rl ./*/CAL/*.csv`

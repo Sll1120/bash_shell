@@ -1,7 +1,7 @@
 ﻿cmd,,lower,upper,isFlag,UniqueCode,return_info,Type,tryPerio,tryTimes
 *DS0,确保机器未进入测试模式,,,1,setInitTestMode_OFF,,BDP,200,2
 ?BA,检测电池电压信息Query Battery Voltage,13500,17000,0,checkBAT_V_1,,BDP,200,10
-?BA,检测电池电流信息Query Battery Current,80,400,0,checkBAT_A_1,,BDP,200,2
+?BA,检测电池电流信息Query Battery Current,120,400,0,checkBAT_A_1,,BDP,200,2
 ?BC,检测电池充电电压信息Query Charging voltage,0,10000,0,checkChargeBAT_V_1,,BDP,200,2
 ?BC,检测电池充电电流信息Query Charging Current,0,0,0,checkChargeBAT_A_1,,BDP,200,2
 ?BC,检测电池充电状态信息Query Charging State,0,0,0,checkChargeBAT_ST_1,,BDP,200,2
@@ -19,7 +19,7 @@ currentTest_OFF,充电弹片断开,,,0,currentTest_OFF,,,200,2
 ?BC,检测电池充电状态信息Query Charging State,0,0,2,checkChargeBAT_ST_2,,BDP,200,2
 *DS1,进入测试模式Enter Test Mode,,,1,setTestMode_ON,,BDP,200,2
 ?DS,确认进入测试模式Ensure Test Mode,1,1,2,checkTestMode_ON,,BDP,200,2
-*WX,写入整机二维码SKU和SN信息,28,28,2,setQRCode,,BDP,500,1
+*WX,写入整机二维码SKU和SN信息,212,212,2,setQRCode,,BDP,500,1
 *WD,写入整机二维码HWD信息,32,32,2,setHWD,,BDP,500,1
 *WP2,重启上下位机,,,2,setReboot,,BDP,200,2
 currentTest_ON,充电弹片接触,,,0,currentTest_ON2,,,200,1
@@ -27,7 +27,7 @@ currentTest_OFF,充电弹片断开,,,0,currentTest_OFF2,,,200,1
 delay,手动开机延时,10,,0,delay_baoyu,,SPE,200,1
 *DS1,二次进入测试模式,,,2,setTestMode_ON_2,,BDP,200,2
 *DK,写入水箱流量,,,2,setWaterflowrate,,BDP,200,5
-?WX,读取SKU以及SN （判断长度以及是否匹配QR信息）,28,28,2,checkQRCode,,BDP,200,5
+?WX,读取SKU以及SN （判断长度以及是否匹配QR信息）,212,212,2,checkQRCode,,BDP,200,5
 ?WD,读取HWD（判断长度以及是否匹配QR信息）,32,32,2,checkHWDinfo_QR,,BDP,200,5
 *NP1,开启导航板电源Nav Board Poweron,,,2,setNavBoard_PowerON,,BDP,200,2
 ?DX0,判断左磁传感器是否触发,0,0,0,checkMAGSensorL_OFF,,BDP,200,2
@@ -37,7 +37,7 @@ delay,手动开机延时,10,,0,delay_baoyu,,SPE,200,1
 ?DX5,判断中磁传感器是否触发,0,0,0,checkMAGSensorC_OFF,,BDP,200,2
 ?DX3,判断尘盒磁传感器未触发,0,0,0,checkDustBMAGSensor_OFF,,BDP,200,2
 ?DX7,判断水箱传感器是否触发,0,0,2,checkWaterTankSensorOFF,,BDP,200,2
-?DX8,判断水位传感器未触发,0,0,0,checkWaterLeveSensor_OFF,,BDP,200,2
+?DX12,判断水位传感器未触发,0,0,0,checkWaterLeveSensor_OFF,,BDP,200,2
 ?DA,检测震动电机电流,0,5,2,checkAgitADC_0,,BDP,200,2
 ?DG,检测喷水电机电流,0,5,0,checkWaterPumADC_0,,BDP,200,2
 ?DL,,0,0,2,checkFanJ_ADC,,BDP,200,2
@@ -57,21 +57,21 @@ delay,手动开机延时,10,,0,delay_baoyu,,SPE,200,1
 ?DT1,检测right bumper是否触发,0,0,2,checkRBumper_OFF,,BDP,200,2
 ?DT2,检测TopLeft bumper是否触发,0,0,2,checkTopLBumper_OFF,,BDP,200,2
 ?DT3,检测TopRight bumper是否触发,0,0,2,checkTopRBumper_OFF,,BDP,200,2
-?DT8,检测TopCenter Middle bumper是否触发,0,0,2,checkTopCBumper_OFF,,BDP,200,2
+?DT12,检测TopCenter Middle bumper是否触发,0,0,2,checkTopCBumper_OFF,,BDP,200,2
 ?DT9,检查雷达bumper 开关0 LiDAR turret bumper 0,0,0,2,checkLidarTurretLBumper_OOFF,,BDP,200,2
 ?DTA,检查雷达bumper 开关1 LiDAR turret bumper 1,0,0,2,checkLidarTurretRBumper_OFF,,BDP,200,2
 ?DTB,检查雷达bumper 开关2 LiDAR turret bumper 2,0,0,2,checkLidarTurretFBumper_OFF,,BDP,200,2
 ?DD,检测主刷工作电流,10,400,2,checkMainBrushMotor_A,,BDP,200,2
 ?DD,检测主刷工作速度,900,1100,0,checkMainBrushMotor_RPM,,BDP,200,2
 ?DM1,检测右轮电机工作电流,10,140,2,checkRWheelMotor_A,,BDP,200,2
-?DR1,检测右轮电机工作速度,340,580,2,checkRWheelMotor_RPM,,BDP,200,2
+?DR1,检测右轮电机工作速度,340,5120,2,checkRWheelMotor_RPM,,BDP,200,2
 ?DM0,检测左轮电机工作电流,10,140,2,checkLWheelMotor_A,,BDP,200,2
-?DR0,检测左轮电机工作速度,340,580,2,checkLWheelMotor_RPM,,BDP,200,2
+?DR0,检测左轮电机工作速度,340,5120,2,checkLWheelMotor_RPM,,BDP,200,2
 ?DB0,检测左边刷电机工作电流,15,100,2,checkLSideBrushMotor_A,,BDP,200,2
 ?DB1,检测右边刷电流工作电流,15,100,2,checkRSideBrushMotor_A,,BDP,200,2
 ?DC,检测吸尘电机工作速度,150,350,2,checkSuctionMotor_A,,BDP,200,2
 ?DA,检测震动电机电流,10,120,2,checkAgitADC_1,,BDP,200,2
-?DG,检测喷水电机电流,10,80,2,checkWaterPumADC_1,,BDP,200,2
+?DG,检测喷水电机电流,10,120,2,checkWaterPumADC_1,,BDP,200,2
 ?DL,,0,300,2,checkFanJ_ADC_1,,BDP,200,2
 *DD000,激活主刷马达停止,,,2,stopMainBrushMotor,,BDP,200,2
 *DM110000,激活右轮马达停止,,,2,stopRWheelMotor,,BDP,200,2
@@ -84,14 +84,14 @@ delay,手动开机延时,10,,0,delay_baoyu,,SPE,200,1
 *DL000,激活fanj电机工作,,,0,stopFanJMotor,,BDP,200,2
 PushRobot,气缸运动,,,2,PushRobot,,,200,5
 ?WI,检测WiFi SCM 版本信息（比对版本）,1.4.014,1.4.014,0,checkWifiVersion,,BDP,200,40
-?DU8,Front FWD(L) ADC值（根据协议 取倒数第8至倒数第4位判断取值范围）,50,4000,0,checkLFrontFWDArray_ADC,,BDP,200,2
-?DU9,Front FWD(C) ADC值（根据协议 取倒数第8至倒数第4位判断取值范围）,50,4000,2,checkCFrontFWDArray_ADC,,BDP,200,2
+?DU12,Front FWD(L) ADC值（根据协议 取倒数第12至倒数第4位判断取值范围）,50,4000,0,checkLFrontFWDArray_ADC,,BDP,200,2
+?DU9,Front FWD(C) ADC值（根据协议 取倒数第12至倒数第4位判断取值范围）,50,4000,2,checkCFrontFWDArray_ADC,,BDP,200,2
 ?DUA,Front FWD(A) ADC值 同上,10,4000,0,checkRFrontFWDArray_ADC,,BDP,200,2
 ?DU0,Front left cliff ADC值 同上,10,4000,2,checkFrontLCliff_ADC,,BDP,200,2
 ?DU1,Front Right cliff ADC值 同上,10,4000,2,checkFrontRCliff_ADC,,BDP,200,2
 ?DU2,Middle left cliff ADC值 同上,10,4000,2,checkMiddleLCliff_ADC,,BDP,200,2
 ?DU3,Middle Right cliff ADC值 同上,10,4000,2,checkMiddleRCliff_ADC,,BDP,200,2
-?DU7,Along wall Sensor L ADC值 同上,80,4000,0,checkLAlongWallSensor_ADC,,BDP,200,2
+?DU7,Along wall Sensor L ADC值 同上,120,4000,0,checkLAlongWallSensor_ADC,,BDP,200,2
 ?DU6,Along wall Sensor L ADC值 同上,0,205,2,checkRAlongWallSensor_ADC,,BDP,200,2
 ?DX0,判断左磁传感器是否触发,1,1,2,checkMAGSensorL_ON,,BDP,200,2
 ?DX1,判断右磁传感器是否触发,1,1,2,checkMAGSensorR_ON,,BDP,200,2
@@ -102,7 +102,7 @@ PushRobot,气缸运动,,,2,PushRobot,,,200,5
 delay,延时,2,,1,delay_yongq,,SPE,200,1
 ?DX7,判断水箱传感器是否触发,1,1,0,checkWaterTankSensor_ON,,BDP,200,2
 delay,延时,2,,1,delay_yongq2,,SPE,200,1
-?DX8,判断水位传感器未触发,1,1,0,checkWaterLeveSensor_ON,,BDP,200,2
+?DX12,判断水位传感器未触发,1,1,0,checkWaterLeveSensor_ON,,BDP,200,2
 ?DV0,检测左前Dock IR Sensor(IR Sensors ON for docking@Front Left),1,16777215,2,checkFrontLDockIRSesor,,BDP,200,2
 ?DV1,检测右前Dock IR Sensor(IR Sensors ON for docking@Front Right),1,16777215,2,checkFrontRDockIRSesor,,BDP,200,2
 ?DV2,检测左中Dock IR Sensor(IR Sensors ON for docking@Middle Left),1,16777215,2,checkMiddleLDockIRSesor,,BDP,200,2
@@ -125,7 +125,7 @@ delay,延时,2,,1,delay_yongq2,,SPE,200,1
 ?DT1,检测right bumper是否触发,1,1,2,checkRBumper_ON,,BDP,200,2
 ?DT2,检测TopLeft bumper是否触发,1,1,0,checkTopLBumper_ON,,BDP,200,2
 ?DT3,检测TopRight bumper是否触发,1,1,0,checkTopRBumper_ON,,BDP,200,2
-?DT8,检测TopCenter Middle bumper是否触发,1,1,0,checkTopCMiddleBumper_ON,,BDP,200,2
+?DT12,检测TopCenter Middle bumper是否触发,1,1,0,checkTopCMiddleBumper_ON,,BDP,200,2
 ?DT9,检查雷达bumper 开关0 LiDAR turret bumper 0,1,1,2,checkLidarTurretLBumper_ON,,BDP,200,2
 ?DTA,检查雷达bumper 开关1 LiDAR turret bumper 1,1,1,2,checkLidarTurretRBumper_ON,,BDP,200,2
 ?DTB,检查雷达bumper 开关2 LiDAR turret bumper 2,1,1,2,checkLidarTurretFrontBumper_ON,,BDP,200,2
@@ -138,7 +138,7 @@ delay,延时,2,,1,delay_yongq2,,SPE,200,1
 ?ME,检测雷达工作电流,0,10000,2,checkLidarwork_A,,BDP,200,5
 ?MG,检测雷达转动频率,5,7,2,checkLidarRotFreq_A,,BDP,200,5
 ?WW,读取PCBA 二维码信息,31,31,2,checkPcbaBarcode,,BDP,200,5
-?WS,检测PCBA版本信息长度,28,28,0,checkNavPcbaBarcode,,BDP,200,5
+?WS,检测PCBA版本信息长度,212,212,0,checkNavPcbaBarcode,,BDP,200,5
 ?WH,检测bootloader版本,11.15,11.15,2,checkNavBootloader_Ver,,BDP,200,5
 ?NH,导航板状态,1,1,2,checkNavHealthState,,BDP,200,5
 ?PD,查询PCBA硬件信息Check PCBA Hardware build Info,zp64,zp64,0,checkPcbaHWInfo,,BDP,200,2
@@ -152,7 +152,7 @@ PD=PH,判断PD=PH Validate PD=PH,1,1,0,validatePD_PH,,SPE,200,2
 ?WM,HWD自检,32,32,0,checkHWD_self,,BDP,200,5
 ?MA,检测雷达厂家型号,0.3,0.3,2,checkLidarModel,,BDP,200,10
 ?MA,检测雷达硬件版本,0.0.0.0,0.0.0.0,2,checkLidarHW_Ver,,BDP,200,5
-?MA,检测雷达固件版本,0.1.13.18,0.1.13.18,2,checkLidarFW_Ver,,BDP,200,5
+?MA,检测雷达固件版本,0.1.13.112,0.1.13.112,2,checkLidarFW_Ver,,BDP,200,5
 ?DK,对比水箱流量,0,10000,0,checkWaterflowrate,,BDP,200,5
 *WG02,写入BDP测试标志,0.0.1.4,,2,setBDPTestPass,,BDP,200,2
 ?WG0,检测BDP测试标志,2,2,1,checkBDPTestState,,BDP,200,2
