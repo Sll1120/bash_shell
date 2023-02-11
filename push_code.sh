@@ -18,8 +18,7 @@ else
 	echo -e "\e[1;31m gitee 服务器推送 fail ! \e[0m"
 fi
 
-	echo -e "-------------------------------------------------"
-sleep 1
+echo -e "-------------------------------------------------"
 #git push github master
 git push -u github +master
 if [ $? = 0 ];then
