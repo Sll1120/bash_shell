@@ -13,16 +13,16 @@ sleep 1
 #git push gitee master
 git push -u gitee +master
 if [ $? = 0 ];then
-	echo -e "\033[41;32m gitee 服务器推送 success ! \033[0m"
+	echo -e "\033[1;32m gitee 服务器推送 success ! \033[0m"
 else
-	echo -e "\033[41;31m gitee 服务器推送 fail ! \033[0m"
+	echo -e "\033[1;31m gitee 服务器推送 fail ! \033[0m"
 fi
 
 sleep 1
 #git push github master
 git push -u github +master
 if [ $? = 0 ];then
-	echo -e "\033[41;32m github 服务器推送 success ! \033[0m"
+	echo -e "\033[1;32m github 服务器推送 success ! \033[0m"
 else
-	echo -e "\033[41;31m github 服务器推送 fail ! \033[0m"
+	echo -e "\033[1;31m github 服务器推送 fail ! \033[0m"
 fi
