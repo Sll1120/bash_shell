@@ -9,11 +9,20 @@ git add .
 git commit -m "Released in `date "+%Y-%m-%d %H:%M"`"
 echo -e "\033[32m start push code to gitee.\033[0m"
 sleep 1
+
 #git push gitee master
 git push -u gitee +master
-echo -e "----------gitee 服务器推送 success !------------"
+if [ $? = 0 ];then
+	echo -e "\33[41,32m gitee 服务器推送 success ! \33[0m"
+else
+	echo -e "\33[41,31m gitee 服务器推送 fail ! \33[0m"
+fi
 
-sleep 2
+sleep 1
 #git push github master
 git push -u github +master
-echo -e "----------github 服务器推送 success !------------"
+if [ $? = 0 ];then
+	echo -e "\33[41,32m github 服务器推送 success ! \33[0m"
+else
+	echo -e "\33[41,31m github 服务器推送 fail ! \33[0m"
+fi

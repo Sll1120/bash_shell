@@ -8,4 +8,3 @@
 git fetch --all
 git reset --hard gitee/master
 git pull
-
