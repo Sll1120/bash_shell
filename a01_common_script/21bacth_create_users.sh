@@ -28,6 +28,6 @@ cat /etc/passwd | awk -F: '{print $1}'
 #cat /etc/passwd |awk -F: '$4>=1000 {print $1,$4}'
 
 for i in $(seq 9); do
-	userdel user_0$i
+    sudo userdel user_0$i
 done
-rm -fr /home/user_0$i
+sudo rm -fr /home/user_0$i
