@@ -91,3 +91,36 @@ else
 fi
 #运行结果：
 #a is less than b
+echo '(4) -----------------------------------------------------------'
+read -p '请输入你的选择的信息[cpu|mem|hard]：' i
+if [ $i == cpu ];then
+	echo -e "\e[1;32mcpu info is ：\e[0m"
+	cat /proc/cpuinfo
+elif [ $i == mem ];then
+	echo -e "\e[1;32mmem info is：\e[0m"
+	cat /proc/meminfo
+elif [ $i == hard ];then
+	echo -e "\e[1;32mharddisk info is：\e[0m"
+	df -h
+else 
+	echo -e "\e[1;31m请确认，你输入的信息有误!!!\e[0m"
+fi
+
+echo '(5) -----------------------------------------------------------'
+read -p '请输入你的选择的信息[cpu|mem|hard]：' j
+case $j in
+	cpu)
+		echo -e "\e[1;32mcpu info is ：\e[0m"
+		cat /proc/cpuinfo
+		;;
+	mem)
+		echo -e "\e[1;32mmem info is：\e[0m"
+		cat /proc/meminfo
+		;;
+	hard)
+		echo -e "\e[1;32mharddisk info is：\e[0m"
+		df -h
+		;;
+	*)
+		echo -e "\e[1;31m请确认，你输入的信息有误!!!\e[0m"
+esac
