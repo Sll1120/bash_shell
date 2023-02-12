@@ -7,7 +7,7 @@
 # **********************************************************
 git add .
 git commit -m "Released in `date "+%Y-%m-%d %H:%M"`"
-echo -e "\0033[32m start push code to gitee.\0033[0m"
+echo -e "\033[32m start push code to gitee.\033[0m"
 sleep 1
 
 #git push gitee master
