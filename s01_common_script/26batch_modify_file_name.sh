@@ -11,10 +11,21 @@ echo '(1)-----------------------完美分割线--------------------------------'
 #do
 #	mv ${file}  ` echo $file | sed 's/shell_//g' `   #sed命令进行文件名替换
 #done
+
 files=$(find . -name "*.csv") #寻找csv类型的文件
 for file in $files; do        #遍历files
 	#grep $1 $file | awk -F, '{print $2,$5,$6}'      #将输入参数1与当前文件内容进行匹配
 	mv $file $(echo ${file#*_})
+done
+
+#嵌套for循环
+for file in ` ls -d $(ls --file-type | grep ".*/$") -l `  #批量修改目录名
+do
+	for i in `seq 1 3`
+	do
+		mv ${file} $(echo ${file//python/p$i})
+
+	done
 done
 
 #目的：把article改为bbs
