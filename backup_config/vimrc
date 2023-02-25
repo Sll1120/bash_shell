@@ -84,7 +84,7 @@ function HeaderPython()
 	call append(4,"# * Create time : ".strftime("%Y-%m-%d %H:%M"))
 	call append(5,"# * Filename : ".expand("%:t"))
 	call append(6,"# **********************************************************")
-	call append(7,"echo '(1)-----------------------完美分割线--------------------------------'")
+	call append(7,"print('(1)-----------------------完美分割线--------------------------------')")
 	normal G
     	normal O
 endfunction
